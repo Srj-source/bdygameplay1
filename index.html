@@ -1,739 +1,1611 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Happy Birthday!!! :)</title>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="favicon.png" />
-  <style>
-     
-     html {
-  box-sizing: border-box;
+	<title>Happy Birthday</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Happy Birthday Xola">
+	<meta name="robots" content="index, follow" />
+	<link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" /> 
+    <meta name="keywords" content="Birthday, Happy">
+    <!-- Strat of Facebook Meta -->
+    <meta property="og:type" content="E-Greeting" />
+    <meta property="og:image" content="favicon.ico" />
+    <meta property="og:description" content="Wish you a very Happy Birthday">
+    <!-- End of Facebook Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<style>/* Absolute Center CSS Spinner */
+.loading {
+  position: fixed;
+  z-index: 99999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-body {
-  margin: 0;
-  font-family: "Work Sans", sans-serif;
-}
-
-.container {
-  height: 100vh;
-  width: 100vh;
-  margin: 0 auto;
-  text-align: center;
-  visibility: hidden;
-  position: relative;
-  overflow: hidden;
-}
-
-.container div.six {
-  top: 10vh;
-  z-index: 1;
-}
-
-.container div.seven,
-.container div.eight {
-  width: 100vw;
-  height: 100vh;
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
   position: fixed;
   top: 0;
-}
-
-.container > div {
-  position: absolute;
   left: 0;
-  right: 0;
-  top: 20vh;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
 }
 
-.one {
-  font-size: 4.5rem;
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
 
-.one > img {
-  vertical-align: middle;
-  margin-bottom: 10px;
-  max-width: 100%;
-  height: auto;
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: #FFF 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, #FFF -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: #FFF 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, #FFF -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
 }
 
-.two {
-  font-size: 1.2rem;
-  font-weight: lighter;
-}
+/* Animation */
 
-.three {
-  font-size: 3rem;
-}
-
-.four .text-box {
-  width: 600px;
-  margin: 0 auto;
-  border: 3px solid #aaa;
-  border-radius: 5px;
-  padding: 10px;
-  position: relative;
-}
-
-.text-box p {
-  margin: 0;
-  text-align: left;
-}
-
-.text-box span {
-  visibility: hidden;
-}
-
-.text-box .fake-btn {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  color: #fff;
-  background-color: rgb(21, 161, 237);
-  padding: 5px 8px;
-  border-radius: 3px;
-}
-
-.five p {
-  font-size: 2rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.idea-3 strong {
-  padding: 3px 5px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.five .idea-5 {
-  font-size: 4rem;
-}
-
-.idea-5 span,
-.idea-6 span,
-.wish-hbd span {
-  display: inline-block;
-}
-
-.idea-6 span {
-  font-size: 15rem;
-}
-
-.six {
-  position: relative;
-}
-
-.six img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
-
-.six .hat {
-  position: absolute;
-  width: 80px;
-  top: -35px;
-  left: 41.5%;
-  /* transform: scale(0.1); */
-}
-
-.baloons img {
-  display: inline-block;
-  position: absolute;
-}
-
-.baloons img:nth-child(even) {
-  left: -10%;
-}
-
-.baloons img:nth-child(odd) {
-  right: -10%;
-}
-
-.baloons img:nth-child(3n + 0) {
-  left: 30%;
-}
-
-.eight svg {
-  width: 25px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  z-index: -1;
-}
-
-.eight svg:nth-child(1) {
-  top: 7vh;
-  left: 5vw;
-  fill: #bd6ecf;
-}
-
-.eight svg:nth-child(2) {
-  top: 23vh;
-  left: 35vw;
-  fill: #7dd175;
-}
-
-.eight svg:nth-child(3) {
-  top: 33vh;
-  left: 23vw;
-  fill: #349d8b;
-}
-
-.eight svg:nth-child(4) {
-  top: 43vh;
-  left: 57vw;
-  fill: #347a9d;
-}
-
-.eight svg:nth-child(5) {
-  top: 68vh;
-  left: 7vw;
-  fill: #c66053;
-}
-
-.eight svg:nth-child(6) {
-  top: 42vh;
-  left: 77vw;
-  fill: #bfaa40;
-}
-
-.eight svg:nth-child(7) {
-  top: 68vh;
-  left: 83vw;
-  fill: #e3bae8;
-}
-
-.eight svg:nth-child(8) {
-  top: 86vh;
-  left: 37vw;
-  fill: #8762cb;
-}
-
-.eight svg:nth-child(9) {
-  top: 94vh;
-  left: 87vw;
-  fill: #9a90da;
-}
-
-.wish-hbd {
-  font-size: 3em;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.wish h5 {
-  font-weight: lighter;
-  font-size: 2rem;
-  margin: 10px 0 0;
-}
-
-.nine p {
-  font-size: 2rem;
-  font-weight: lighter;
-}
-
-#replay {
-  z-index: 3;
-  cursor: pointer;
-}
-
-/* Media Queries */
-@media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
-@media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
-@media screen and (max-width: 500px) {
-  .container {
-    width: 90%;
-  }
-
-  .four .text-box {
-    width: 90%;
-  }
-
-  .text-box .fake-btn {
-    right: 5px;
-    bottom: -38px;
-  }
-
-  .idea-5 span {
-    display: block;
-  }
-
-  .idea-6 span {
-    font-size: 10rem;
-  }
-
-  .six .hat {
-    width: 50px;
-    top: -20px;
-  }
-
-  .wish-hbd {
-    font-size: 2.2em;
-  }
-
-  .wish h5 {
-    font-size: 1.4rem;
-  }
-
-  .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-  }
+      body {
+	/*background-color: #FFDAB9;	*/
+	background-color: #000;
+	-webkit-transition:background-color linear 5s;
+	-moz-transition:background-color linear 5s;
+	-o-transition:background-color linear 5s;
+	-ms-transition:background-color linear 5s;
+	transition:background-color linear 5s;
+	overflow-x:hidden;
 }
-</style>
+.container {
+	display: none;
+}
+.peach {
+	background-color: #FFDAB9;
+	
+}
+.peach-after {
+	-webkit-animation:peach_alive linear 8s infinite;
+	-moz-animation:peach_alive linear 8s infinite;
+	-o-animation:peach_alive linear 8s infinite;
+	-ms-animation:peach_alive linear 8s infinite;
+	animation:peach_alive linear 8s infinite;
+}
+
+@-webkit-keyframes peach_alive {
+	0%{
+		background-color: #FFDAB9;
+	}
+	25%{
+		background-color: #FFE4B5;
+	}
+	50%{
+		background-color: #FFDAB9;
+	}
+	75%{
+		background-color: #FFEFD5;
+	}
+	100%{
+		background-color: #FFDAB9;
+	}
+}
+@-moz-keyframes peach_alive {
+	0%{
+		background-color: #FFDAB9;
+	}
+	25%{
+		background-color: #FFE4B5;
+	}
+	50%{
+		background-color: #FFDAB9;
+	}
+	75%{
+		background-color: #FFEFD5;
+	}
+	100%{
+		background-color: #FFDAB9;
+	}
+}
+
+@-o-keyframes peach_alive {
+	0%{
+		background-color: #FFDAB9;
+	}
+	25%{
+		background-color: #FFE4B5;
+	}
+	50%{
+		background-color: #FFDAB9;
+	}
+	75%{
+		background-color: #FFEFD5;
+	}
+	100%{
+		background-color: #FFDAB9;
+	}
+}
+
+@-ms-keyframes peach_alive {
+	0%{
+		background-color: #FFDAB9;
+	}
+	25%{
+		background-color: #FFE4B5;
+	}
+	50%{
+		background-color: #FFDAB9;
+	}
+	75%{
+		background-color: #FFEFD5;
+	}
+	100%{
+		background-color: #FFDAB9;
+	}
+}
+
+@keyframes peach_alive {
+	0%{
+		background-color: #FFDAB9;
+	}
+	25%{
+		background-color: #FFE4B5;
+	}
+	50%{
+		background-color: #FFDAB9;
+	}
+	75%{
+		background-color: #FFEFD5;
+	}
+	100%{
+		background-color: #FFDAB9;
+	}
+}
+
+
+.bulb {
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	background-repeat: no-repeat no-repeat;
+	background-position:center 0px;
+	background-size: 50px 50px;
+}
+
+.bulb-holder {
+	height: 70px;
+}
+
+.bulb-glow-yellow {
+	background-image: url('bulb_yellow.png');
+	-webkit-animation: bulb_glow_yellow linear 5s;
+	-moz-animation: bulb_glow_yellow linear 5s;
+	-o-animation: bulb_glow_yellow linear 5s;
+	-ms-animation: bulb_glow_yellow linear 5s;
+	animation: bulb_glow_yellow linear 5s;
+}
+
+@-webkit-keyframes bulb_glow_yellow {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_yellow.png');
+		opacity: 1;
+	}
+}
+@-moz-keyframes bulb_glow_yellow {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_yellow.png');
+		opacity: 1;
+	}
+}
+@-o-keyframes bulb_glow_yellow {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_yellow.png');
+		opacity: 1;
+	}
+}
+@-ms-keyframes bulb_glow_yellow {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_yellow.png');
+		opacity: 1;
+	}
+}
+@keyframes bulb_glow_yellow {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_yellow.png');
+		opacity: 1;
+	}
+}
+
+.bulb-glow-red {
+	background-image: url('bulb_red.png');
+	-webkit-animation: bulb_glow_red linear 5s;
+	-moz-animation: bulb_glow_red linear 5s;
+	-o-animation: bulb_glow_red linear 5s;
+	-ms-animation: bulb_glow_red linear 5s;
+	animation: bulb_glow_red linear 5s;
+}
+
+@-webkit-keyframes bulb_glow_red {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_red.png');
+		opacity: 1;
+	}
+}
+@-moz-keyframes bulb_glow_red {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_red.png');
+		opacity: 1;
+	}
+}
+@-o-keyframes bulb_glow_red {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_red.png');
+		opacity: 1;
+	}
+}
+@-ms-keyframes bulb_glow_red {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_red.png');
+		opacity: 1;
+	}
+}
+@keyframes bulb_glow_red {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_red.png');
+		opacity: 1;
+	}
+}
+.bulb-glow-blue {
+	background-image: url('bulb_blue.png');
+	-webkit-animation: bulb_glow_blue linear 5s;
+	-moz-animation: bulb_glow_blue linear 5s;
+	-o-animation: bulb_glow_blue linear 5s;
+	-ms-animation: bulb_glow_blue linear 5s;
+	animation: bulb_glow_blue linear 5s;
+}
+
+@-webkit-keyframes bulb_glow_blue {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_blue.png');
+		opacity: 1;
+	}
+}
+@-moz-keyframes bulb_glow_blue {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_blue.png');
+		opacity: 1;
+	}
+}
+@-o-keyframes bulb_glow_blue {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_blue.png');
+		opacity: 1;
+	}
+}
+@-ms-keyframes bulb_glow_blue {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_blue.png');
+		opacity: 1;
+	}
+}
+@keyframes bulb_glow_blue {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_blue.png');
+		opacity: 1;
+	}
+}
+
+.bulb-glow-green {
+	background-image: url('bulb_green.png');
+	-webkit-animation: bulb_glow_green linear 5s;
+	-moz-animation: bulb_glow_green linear 5s;
+	-o-animation: bulb_glow_green linear 5s;
+	-ms-animation: bulb_glow_green linear 5s;
+	animation: bulb_glow_green linear 5s;
+}
+
+@-webkit-keyframes bulb_glow_green {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_green.png');
+		opacity: 1;
+	}
+}
+@-moz-keyframes bulb_glow_green {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_green.png');
+		opacity: 1;
+	}
+}
+@-o-keyframes bulb_glow_green {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_green.png');
+		opacity: 1;
+	}
+}
+@-ms-keyframes bulb_glow_green {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_green.png');
+		opacity: 1;
+	}
+}
+@keyframes bulb_glow_green {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_green.png');
+		opacity: 1;
+	}
+}
+
+.bulb-glow-pink {
+	background-image: url('bulb_pink.png');
+	-webkit-animation: bulb_glow_pink linear 5s;
+	-moz-animation: bulb_glow_pink linear 5s;
+	-o-animation: bulb_glow_pink linear 5s;
+	-ms-animation: bulb_glow_pink linear 5s;
+	animation: bulb_glow_pink linear 5s;
+}
+
+@-webkit-keyframes bulb_glow_pink {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_pink.png');
+		opacity: 1;
+	}
+}
+@-moz-keyframes bulb_glow_pink {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_pink.png');
+		opacity: 1;
+	}
+}
+@-o-keyframes bulb_glow_pink {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_pink.png');
+		opacity: 1;
+	}
+}
+@-ms-keyframes bulb_glow_pink {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_pink.png');
+		opacity: 1;
+	}
+}
+@keyframes bulb_glow_pink {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_pink.png');
+		opacity: 1;
+	}
+}
+
+.bulb-glow-orange {
+	background-image: url('bulb_orange.png');
+	-webkit-animation: bulb_glow_orange linear 5s;
+	-moz-animation: bulb_glow_orange linear 5s;
+	-o-animation: bulb_glow_orange linear 5s;
+	-ms-animation: bulb_glow_orange linear 5s;
+	animation: bulb_glow_orange linear 5s;
+}
+
+@-webkit-keyframes bulb_glow_orange {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_orange.png');
+		opacity: 1;
+	}
+}
+@-moz-keyframes bulb_glow_orange {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_orange.png');
+		opacity: 1;
+	}
+}
+@-o-keyframes bulb_glow_orange {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_orange.png');
+		opacity: 1;
+	}
+}
+@-ms-keyframes bulb_glow_orange {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_orange.png');
+		opacity: 1;
+	}
+}
+@keyframes bulb_glow_orange {
+	0%{
+		background-image: url('bulb.png');
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		background-image: url('bulb_orange.png');
+		opacity: 1;
+	}
+}
+
+
+/*after music*/
+.bulb-glow-yellow-after {
+	background-image: url('bulb_yellow.png');
+	-webkit-animation: bulb_glow_yellow_after linear 1s infinite;
+	-moz-animation: bulb_glow_yellow_after linear 1s infinite;
+	-o-animation: bulb_glow_yellow_after linear 1s infinite;
+	-ms-animation: bulb_glow_yellow_after linear 1s infinite;
+	animation: bulb_glow_yellow_after linear 1s infinite;
+}
+
+@-webkit-keyframes bulb_glow_yellow_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_yellow.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-moz-keyframes bulb_glow_yellow_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_yellow.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-o-keyframes bulb_glow_yellow_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_yellow.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-ms-keyframes bulb_glow_yellow_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_yellow.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@keyframes bulb_glow_yellow_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_yellow.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+
+.bulb-glow-red-after {
+	background-image: url('bulb_red.png');
+	-webkit-animation: bulb_glow_red_after linear 1.2s infinite;
+	-moz-animation: bulb_glow_red_after linear 1.2s infinite;
+	-o-animation: bulb_glow_red_after linear 1.2s infinite;
+	-ms-animation: bulb_glow_red_after linear 1.2s infinite;
+	animation: bulb_glow_red_after linear 1.2s infinite;
+}
+
+@-webkit-keyframes bulb_glow_red_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_red.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-moz-keyframes bulb_glow_red_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_red.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-o-keyframes bulb_glow_red_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_red.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-ms-keyframes bulb_glow_red_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_red.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@keyframes bulb_glow_red_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_red.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+
+.bulb-glow-blue-after {
+	background-image: url('bulb_blue.png');
+	-webkit-animation: bulb_glow_blue_after linear 1.4s infinite;
+	-moz-animation: bulb_glow_blue_after linear 1.4s infinite;
+	-o-animation: bulb_glow_blue_after linear 1.4s infinite;
+	-ms-animation: bulb_glow_blue_after linear 1.4s infinite;
+	animation: bulb_glow_blue_after linear 1.4s infinite;
+}
+
+@-webkit-keyframes bulb_glow_blue_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_blue.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-moz-keyframes bulb_glow_blue_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_blue.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-o-keyframes bulb_glow_blue_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_blue.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-ms-keyframes bulb_glow_blue_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_blue.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@keyframes bulb_glow_blue_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_blue.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+.bulb-glow-green-after {
+	background-image: url('bulb_green.png');
+	-webkit-animation: bulb_glow_green_after linear 1.8s infinite;
+	-moz-animation: bulb_glow_green_after linear 1.8s infinite;
+	-o-animation: bulb_glow_green_after linear 1.8s infinite;
+	-ms-animation: bulb_glow_green_after linear 1.8s infinite;
+	animation: bulb_glow_green_after linear 1.8s infinite;
+}
+
+@-webkit-keyframes bulb_glow_green_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_green.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+
+@-moz-keyframes bulb_glow_green_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_green.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-o-keyframes bulb_glow_green_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_green.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-ms-keyframes bulb_glow_green_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_green.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@keyframes bulb_glow_green_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_green.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+.bulb-glow-pink-after {
+	background-image: url('bulb_pink.png');
+	-webkit-animation: bulb_glow_pink_after linear 2s infinite;
+	-moz-animation: bulb_glow_pink_after linear 2s infinite;
+	-o-animation: bulb_glow_pink_after linear 2s infinite;
+	-ms-animation: bulb_glow_pink_after linear 2s infinite;
+	animation: bulb_glow_pink_after linear 2s infinite;
+}
+
+@-webkit-keyframes bulb_glow_pink_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_pink.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-moz-keyframes bulb_glow_pink_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_pink.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-o-keyframes bulb_glow_pink_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_pink.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-ms-keyframes bulb_glow_pink_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_pink.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@keyframes bulb_glow_pink_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_pink.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+.bulb-glow-orange-after {
+	background-image: url('bulb_orange.png');
+	-webkit-animation: bulb_glow_orange_after linear 2.2s infinite;
+	-moz-animation: bulb_glow_orange_after linear 2.2s infinite;
+	-o-animation: bulb_glow_orange_after linear 2.2s infinite;
+	-ms-animation: bulb_glow_orange_after linear 2.2s infinite;
+	animation: bulb_glow_orange_after linear 2.2s infinite;
+}
+
+@-webkit-keyframes bulb_glow_orange_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_orange.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-moz-keyframes bulb_glow_orange_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_orange.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-o-keyframes bulb_glow_orange_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_orange.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@-ms-keyframes bulb_glow_orange_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_orange.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+@keyframes bulb_glow_orange_after {
+	0%{
+		background-image: url('bulb.png');
+	}
+	50%{
+		background-image: url('bulb_orange.png');
+	}
+	100%{
+		background-image: url('bulb.png');
+	}
+}
+audio {
+	display: none;
+}
+
+.bannar {
+	max-width: 100%;
+	-webkit-transform:translate(0px,-500px);
+	-moz-transform:translate(0px,-500px);
+	-o-transform:translate(0px,-500px);
+	-ms-transform:translate(0px,-500px);
+	transform:translate(0px,-500px);
+
+}
+.bannar-come {
+	-webkit-animation: bannar_come linear 6s;
+	-webkit-transform:translate(0px,0px);
+	-moz-animation: bannar_come linear 6s;
+	-moz-transform:translate(0px,0px);
+	-o-animation: bannar_come linear 6s;
+	-o-transform:translate(0px,0px);
+	-ms-animation: bannar_come linear 6s;
+	-ms-transform:translate(0px,0px);
+	animation: bannar_come linear 6s;
+	transform:translate(0px,0px);
+}
+@-webkit-keyframes bannar_come {
+	0%{
+		-webkit-transform:translate(0px,-1000px);
+	}
+	33%{
+		-webkit-transform:translate(0px,0px);
+		-webkit-transform:rotate(10deg);
+		/*-webkit-transform:scale(1.5);*/
+	}
+	66% {
+		-webkit-transform:translate(0px,100px);
+		-webkit-transform:rotate(-10deg);
+	}
+	100% {
+		-webkit-transform:translate(0px,0px);
+	}
+}
+@-moz-keyframes bannar_come {
+	0%{
+		-moz-transform:translate(0px,-1000px);
+	}
+	33%{
+		-moz-transform:translate(0px,0px);
+		-moz-transform:rotate(10deg);
+		/*-webkit-transform:scale(1.5);*/
+	}
+	66% {
+		-moz-transform:translate(0px,100px);
+		-moz-transform:rotate(-10deg);
+	}
+	100% {
+		-moz-transform:translate(0px,0px);
+	}
+}
+@-o-keyframes bannar_come {
+	0%{
+		-o-transform:translate(0px,-1000px);
+	}
+	33%{
+		-o-transform:translate(0px,0px);
+		-o-transform:rotate(10deg);
+		/*-webkit-transform:scale(1.5);*/
+	}
+	66% {
+		-o-transform:translate(0px,100px);
+		-o-transform:rotate(-10deg);
+	}
+	100% {
+		-o-transform:translate(0px,0px);
+	}
+}
+@-ms-keyframes bannar_come {
+	0%{
+		-ms-transform:translate(0px,-1000px);
+	}
+	33%{
+		-ms-transform:translate(0px,0px);
+		-ms-transform:rotate(10deg);
+		/*-webkit-transform:scale(1.5);*/
+	}
+	66% {
+		-ms-transform:translate(0px,100px);
+		-ms-transform:rotate(-10deg);
+	}
+	100% {
+		-ms-transform:translate(0px,0px);
+	}
+}o
+@keyframes bannar_come {
+	0%{
+		transform:translate(0px,-1000px);
+	}
+	33%{
+		transform:translate(0px,0px);
+		transform:rotate(10deg);
+		/*-webkit-transform:scale(1.5);*/
+	}
+	66% {
+		transform:translate(0px,100px);
+		transform:rotate(-10deg);
+	}
+	100% {
+		transform:translate(0px,0px);
+	}
+}
+
+.balloons {
+	position: fixed;
+	bottom: -200px;
+	opacity: 0.6;
+	z-index: 99;
+	width: 100px;
+	height: 183px;
+	background-repeat: no-repeat no-repeat;
+	background-size: 100px 183px;
+}
+.balloons h2 {
+	text-transform: uppercase;
+	font-family: 'Signika', sans-serif;
+	font-size: 50px;
+	color: #BF4136;
+	text-shadow: 5px 5px 5px #FFF;
+	display: none;
+}
+#b1,#b11 {
+	background-image: url('b1.png');
+}
+#b2,#b22 {
+	background-image: url('b2.png');
+}
+#b3,#b33 {
+	background-image: url('b3.png');
+}
+#b4,#b44{
+	background-image: url('b4.png');
+}
+#b5,#b55{
+	background-image: url('b5.png');
+}
+#b6,#b66{
+	background-image: url('b6.png');
+}
+#b7,#b77{
+	background-image: url('b7.png');
+}
+.balloons-rotate-behaviour-one {
+	-webkit-animation: balloons_rotate_one linear 10s infinite;
+	-webkit-transform: rotate(30deg);
+	-moz-animation: balloons_rotate_one linear 10s infinite;
+	-moz-transform: rotate(30deg);
+	-o-animation: balloons_rotate_one linear 10s infinite;
+	-o-transform: rotate(30deg);
+	-ms-animation: balloons_rotate_one linear 10s infinite;
+	-ms-transform: rotate(30deg);
+	animation: balloons_rotate_one linear 10s infinite;
+	transform: rotate(30deg);
+}
+@-webkit-keyframes balloons_rotate_one {
+	0% {
+		-webkit-transform: rotate(30deg);
+	}
+	50% {
+		-webkit-transform: rotate(-30deg);
+	}
+	100% {
+		-webkit-transform: rotate(30deg);
+	}
+}
+@-moz-keyframes balloons_rotate_one {
+	0% {
+		-moz-transform: rotate(30deg);
+	}
+	50% {
+		-moz-transform: rotate(-30deg);
+	}
+	100% {
+		-moz-transform: rotate(30deg);
+	}
+}
+@-o-keyframes balloons_rotate_one {
+	0% {
+		-o-transform: rotate(30deg);
+	}
+	50% {
+		-o-transform: rotate(-30deg);
+	}
+	100% {
+		-o-transform: rotate(30deg);
+	}
+}
+@-ms-keyframes balloons_rotate_one {
+	0% {
+		-ms-transform: rotate(30deg);
+	}
+	50% {
+		-ms-transform: rotate(-30deg);
+	}
+	100% {
+		-ms-transform: rotate(30deg);
+	}
+}
+@keyframes balloons_rotate_one {
+	0% {
+		transform: rotate(30deg);
+	}
+	50% {
+		transform: rotate(-30deg);
+	}
+	100% {
+		transform: rotate(30deg);
+	}
+}
+.balloons-rotate-behaviour-two {
+	-webkit-animation: balloons_rotate_two linear 10s infinite;
+	-webkit-transform: rotate(-20deg);
+	-moz-animation: balloons_rotate_two linear 10s infinite;
+	-moz-transform: rotate(-20deg);
+	-o-animation: balloons_rotate_two linear 10s infinite;
+	-o-transform: rotate(-20deg);
+	-ms-animation: balloons_rotate_two linear 10s infinite;
+	-ms-transform: rotate(-20deg);
+	animation: balloons_rotate_two linear 10s infinite;
+	transform: rotate(-20deg);
+}
+@-webkit-keyframes balloons_rotate_two {
+	0% {
+		-webkit-transform: rotate(-20deg);
+	}
+	50% {
+		-webkit-transform: rotate(20deg);
+	}
+	100% {
+		-webkit-transform: rotate(-20deg);
+	}
+}
+@-moz-keyframes balloons_rotate_two {
+	0% {
+		-moz-transform: rotate(-20deg);
+	}
+	50% {
+		-moz-transform: rotate(20deg);
+	}
+	100% {
+		-moz-transform: rotate(-20deg);
+	}
+}
+@-o-keyframes balloons_rotate_two {
+	0% {
+		-o-transform: rotate(-20deg);
+	}
+	50% {
+		-o-transform: rotate(20deg);
+	}
+	100% {
+		-o-transform: rotate(-20deg);
+	}
+}
+@-ms-keyframes balloons_rotate_two {
+	0% {
+		-ms-transform: rotate(-20deg);
+	}
+	50% {
+		-ms-transform: rotate(20deg);
+	}
+	100% {
+		-ms-transform: rotate(-20deg);
+	}
+}
+@keyframes balloons_rotate_two {
+	0% {
+		transform: rotate(-20deg);
+	}
+	50% {
+		transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(-20deg);
+	}
+}
+
+.balloon-border{
+	position: fixed;
+	top:100%;
+	opacity: 0.5;
+	z-index: 9999;
+}
+.control-panel {
+	position: fixed;
+	bottom: 0;
+	padding:10px 0px 10px 0px;
+}
+#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story {
+	display: none;
+}
+
+.cake-cover {
+	margin-top: 50px;
+}
+.message {
+	margin-top: 200px;
+	display: none;
+}
+.message p {
+	font-family: 'Signika', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #C4515C;
+	text-shadow: 2px 2px 2px #FFF;
+	display: none;
+	font-weight: bold;
+}
+
+.btn-primary {
+        border-color: #466baf;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: 'Signika', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        background-color: #466baf;
+}
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .open .dropdown-toggle.btn-primary {
+        border-color: #fff;
+        color: #fff;
+        background-color: #466baf;
+    }
+
+
+
+    /*controlling tablet width*/
+    /*@media only screen and (max-width: 720px){
+    	.container {
+    		-webkit-transform: scale(0.9);
+    	}
+    }*/
+   </style>
+	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet/less" href="cake.less">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="one">
-      <h1 class="one">
-        <span data-node-name="greeting">Hey</span>
-        <span data-node-name="name">Miss arshad ,princess</span>
-      </h1>
-      <p class="two" data-node-name="greetingText">I really like your name btw!</p>
+	<div class="loading"></div>
+	<audio class="song" controls loop>
+        <source src="hbd.mp3"></source>
+	   Your browser isn't invited for super fun audio time.
+    </audio>
+        <a href="last.html><div class="balloons text-center" id="b1">
+    	<h2 style="color:#F2B300;"></h2>
+    </div></a>
+    <div class="balloons text-center" id="b2">
+    	<h2 style="color:#0719D4;"></h2>
     </div>
-    <div class="three">
-      <p data-node-name="text1">It's your birthday!!! :D</p>
+	<div class="balloons text-center" id="b3">
+    	<h2 style="color:#D14D39;"></h2>
     </div>
-    <div class="four">
-      <div class="text-box">
-        <p class="hbd-chatbox" data-node-name="textInChatBox">Happy birthday to you!! Yeee! Many many happy blah...</p>
-        <p class="fake-btn" data-node-name="sendButtonLabel">Send</p>
-      </div>
+	<div class="balloons text-center" id="b4">
+    	<h2 style="color:#8FAD00;"></h2>
     </div>
-    <div class="five">
-      <p class="idea-1" data-node-name="text2">That's what I was going to do.</p>
-      <p class="idea-2" data-node-name="text3">But then I stopped.</p>
-      <p class="idea-3">
-        <span data-node-name="text4">I realised, I wanted to do something</span>
-        <strong data-node-name="text4Adjective">special</strong>.</p>
-      <p class="idea-4" data-node-name="text5Entry">Because,</p>
-      <p class="idea-5">
-        <span data-node-name="text5Content">You are Special</span>
-        <span class="smiley" data-node-name="smiley">:)</span>
-      </p>
-      <p class="idea-6">
-        <span data-node-name="bigTextPart1">S</span>
-        <span data-node-name="bigTextPart2">O</span>
-      </p>
+	<div class="balloons text-center" id="b5">
+    	<h2 style="color:#8377E4;"></h2>
     </div>
-    <div class="six">
-      <img src="lydia2.png" alt="" class="lydia-dp" data-node-name="imagePath">
-      <img src="hat.svg" alt="" class="hat">
-      <div class="wish">
-        <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday!</h3>
-        <h5 data-node-name="wishText">May the Allha ji always be with you! ;)</h5>
-      </div>
+    <div class="balloons text-center" id="b6">
+    	<h2 style="color:#99C96A;"></h2>
     </div>
-    <div class="seven">
-      <div class="baloons">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
-      </div>
+    <div class="balloons text-center" id="b7">
+    	<h2 style="color:#20CFB4;"></h2>
     </div>
-    <div class="eight">
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-    </div>
-    <div class="nine">
-      <p data-node-name="outroText">Okay, now come back and tell me if you liked it.</p> <p id="replay" data-node-name="replayText"></p>
-    <a href="https://srj-source.github.io/gameplay2/" > <p style="color:black">lets GO,click on me.</p></a>
-      <p class="last-smile" data-node-name="outroSmiley">:)</p>
-    </div>
-  </div>
+
+    <img src="Balloon-Border.png" width="100%" class="balloon-border">
+ 
+
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_yellow"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_red"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_blue"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_green"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_pink"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_orange"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="banner.png" class="bannar">
+			</div>
+		</div>
+		<div class="row cake-cover">
+			<div class="col-md-12 texr-center">
+				<div class="cake">
+				  <div class="velas">
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				    <div class="fuego"></div>
+				  </div>
+				  <div class="cobertura"></div>
+				  <div class="bizcocho"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row message">
+			<div class="col-md-12">
+				<p>Today is...</p>
+				<p>as beautiful as other days</p>
+				<p>but you realize</p>
+				<p>another year has gone</p>
+				<p>in a blink of the eyes</p>
+				<p><strong>however</strong></p>
+				<p>Do you know..?</p>
+				<p>today is just special</p>
+				<p>so special to you</p>
+				<p>that's why</p>
+				<p>Let's make it...</p>
+				<p>the best celebration ever</p>
+				<p>and let me share...</p>
+				<p>a piece of happiness to you</p>
+				<p>I made all this...</p>
+				<p>as a birthday present to you</p>
+				<p>thanks for being there</p>
+				<p>thanks for the friendship we made</p>
+				<p>thanks for everything</p>
+				<p>I wish you all the best</p>
+				<p>May your life be at ease</p>
+				<p>May all your wishes come true</p>
+				<p>Remember</p>
+				<p>your ambitions</p>
+				<p>you live as a free bird...</p>
+            <p><strong>you are a sehzadi?</strong></p>
+				<p>flying in the blue sky</p>
+				<p>lastly...</p>
+				<p>I'd like to wish you one more time</p>
+				<p>a very happy birthday miss arshad</p>
+            <p>click on yellow ballon </p>
+			</div>
+		</div>
+		<div class="navbar navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-md-6 text-center col-md-offset-3">
+					<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+					<button class="btn btn-primary" id="play">Play Music</button>
+					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
+					<button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
+					<button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
+					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
+					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+					<button class="btn btn-primary" id="story">A mesage for you</button>
+					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
+				</div>
+			</div>
+			<!-- <div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+			</div> -->
+		</div>
+
+
+	</div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="effect.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script type="application/javascript">// Import the data to customize and insert them into page
-const fetchData = () => {
-  fetch("customize.json")
-    .then(data => data.json())
-    .then(data => {
-      dataArr = Object.keys(data);
-      dataArr.map(customData => {
-        if (data[customData] !== "") {
-          if (customData === "imagePath") {
-            document
-              .querySelector(`[data-node-name*="${customData}"]`)
-              .setAttribute("src", data[customData]);
-          } else {
-            document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
-          }
-        }
+  ga('create', 'UA-58229732-1', 'auto');
+  ga('send', 'pageview');
 
-        // Check if the iteration is over
-        // Run amimation if so
-        if ( dataArr.length === dataArr.indexOf(customData) + 1 ) {
-          animationTimeline();
-        } 
-      });
-    });
-};
-
-// Animation Timeline
-const animationTimeline = () => {
-  // Spit chars that needs to be animated individually
-  const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
-  const hbd = document.getElementsByClassName("wish-hbd")[0];
-
-  textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-    .split("")
-    .join("</span><span>")}</span`;
-
-  hbd.innerHTML = `<span>${hbd.innerHTML
-    .split("")
-    .join("</span><span>")}</span`;
-
-  const ideaTextTrans = {
-    opacity: 0,
-    y: -20,
-    rotationX: 5,
-    skewX: "15deg"
-  };
-
-  const ideaTextTransLeave = {
-    opacity: 0,
-    y: 20,
-    rotationY: 5,
-    skewX: "-15deg"
-  };
-
-  const tl = new TimelineMax();
-
-  tl
-    .to(".container", 0.1, {
-      visibility: "visible"
-    })
-    .from(".one", 0.7, {
-      opacity: 0,
-      y: 10
-    })
-    .from(".two", 0.4, {
-      opacity: 0,
-      y: 10
-    })
-    .to(
-      ".one",
-      0.7,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "+=2.5"
-    )
-    .to(
-      ".two",
-      0.7,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "-=1"
-    )
-    .from(".three", 0.7, {
-      opacity: 0,
-      y: 10
-      // scale: 0.7
-    })
-    .to(
-      ".three",
-      0.7,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "+=2"
-    )
-    .from(".four", 0.7, {
-      scale: 0.2,
-      opacity: 0
-    })
-    .from(".fake-btn", 0.3, {
-      scale: 0.2,
-      opacity: 0
-    })
-    .staggerTo(
-      ".hbd-chatbox span",
-      0.5,
-      {
-        visibility: "visible"
-      },
-      0.05
-    )
-    .to(".fake-btn", 0.1, {
-      backgroundColor: "rgb(127, 206, 248)"
-    })
-    .to(
-      ".four",
-      0.5,
-      {
-        scale: 0.2,
-        opacity: 0,
-        y: -150
-      },
-      "+=0.7"
-    )
-    .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-3", 0.7, ideaTextTrans)
-    .to(".idea-3 strong", 0.5, {
-      scale: 1.2,
-      x: 10,
-      backgroundColor: "rgb(21, 161, 237)",
-      color: "#fff"
-    })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(
-      ".idea-5",
-      0.7,
-      {
-        rotationX: 15,
-        rotationZ: -10,
-        skewY: "-5deg",
-        y: 50,
-        z: 10,
-        opacity: 0
-      },
-      "+=0.5"
-    )
-    .to(
-      ".idea-5 .smiley",
-      0.7,
-      {
-        rotation: 90,
-        x: 8
-      },
-      "+=0.4"
-    )
-    .to(
-      ".idea-5",
-      0.7,
-      {
-        scale: 0.2,
-        opacity: 0
-      },
-      "+=2"
-    )
-    .staggerFrom(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: 15,
-        ease: Expo.easeOut
-      },
-      0.2
-    )
-    .staggerTo(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: -15,
-        ease: Expo.easeOut
-      },
-      0.2,
-      "+=1"
-    )
-    .staggerFromTo(
-      ".baloons img",
-      2.5,
-      {
-        opacity: 0.9,
-        y: 1400
-      },
-      {
-        opacity: 1,
-        y: -1000
-      },
-      0.2
-    )
-    .from(
-      ".lydia-dp",
-      0.5,
-      {
-        scale: 3.5,
-        opacity: 0,
-        x: 25,
-        y: -25,
-        rotationZ: -45
-      },
-      "-=2"
-    )
-    .from(".hat", 0.5, {
-      x: -100,
-      y: 350,
-      rotation: -180,
-      opacity: 0
-    })
-    .staggerFrom(
-      ".wish-hbd span",
-      0.7,
-      {
-        opacity: 0,
-        y: -50,
-        // scale: 0.3,
-        rotation: 150,
-        skewX: "30deg",
-        ease: Elastic.easeOut.config(1, 0.5)
-      },
-      0.1
-    )
-    .staggerFromTo(
-      ".wish-hbd span",
-      0.7,
-      {
-        scale: 1.4,
-        rotationY: 150
-      },
-      {
-        scale: 1,
-        rotationY: 0,
-        color: "#ff69b4",
-        ease: Expo.easeOut
-      },
-      0.1,
-      "party"
-    )
-    .from(
-      ".wish h5",
-      0.5,
-      {
-        opacity: 0,
-        y: 10,
-        skewX: "-15deg"
-      },
-      "party"
-    )
-    .staggerTo(
-      ".eight svg",
-      1.5,
-      {
-        visibility: "visible",
-        opacity: 0,
-        scale: 80,
-        repeat: 3,
-        repeatDelay: 1.4
-      },
-      0.3
-    )
-    .to(".six", 0.5, {
-      opacity: 0,
-      y: 30,
-      zIndex: "-1"
-    })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
-    .to(
-      ".last-smile",
-      0.5,
-      {
-        rotation: 90
-      },
-      "+=1"
-    );
-
-  // tl.seek("currentStep");
-  // tl.timeScale(2);
-
-  // Restart Animation on click
-  const replyBtn = document.getElementById("replay");
-  replyBtn.addEventListener("click", () => {
-    tl.restart();
-  });
-};
-
-// Run fetch and animation in sequence
-fetchData();</script>
-
+</script>
 </html>
