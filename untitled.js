@@ -28,7 +28,7 @@
             div.appendChild(h1_4);
             
             const h1_5 = document.createElement('h1');
-            h1_5.innerHTML = 'good now <a href="#" style="color: #000;">click on me ;-) </a>';
+            h1_5.innerHTML = 'good now <a href="untitled.html" style="color: #000;">click on me ;-) </a>';
             div.appendChild(h1_5);
             
             // Append the div to the body
