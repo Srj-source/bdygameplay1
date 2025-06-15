@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Text elements to be typed
             const elements = [
                 { id: 'h1-1', text: 'Hello😀', speed: 100 },
-                { id: 'h1-2', text: 'meeting after a time', speed: 50 },
+                { id: 'h1-2', text: 'meeting after a long time', speed: 50 },
                 { id: 'h1-3', text: 'please use laptop', speed: 50 },
                 { id: 'h1-4', text: 'please', speed: 50 },
-                { id: 'h1-5', html: 'good now <a href="#">click on me ;-)</a>', speed: 30 }
+                { id: 'h1-5', html: 'good now <a href="#">click on me ;-)</a>', speed: 50 }
             ];
             
             // Function to type out text
