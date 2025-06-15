@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { id: 'h1-2', text: 'meeting after a long time', speed: 50 },
                 { id: 'h1-3', text: 'please use laptop', speed: 50 },
                 { id: 'h1-4', text: 'please', speed: 50 },
-                { id: 'h1-5', html: 'good now <a href="#">click on me ;-)</a>', speed: 50 }
+                { id: 'h1-5', html: 'good now <a href="untitled.html">click on me ;-)</a>', speed: 50 }
             ];
             
             // Function to type out text
