@@ -1,39 +1,41 @@
-  document.addEventListener('DOMContentLoaded', function() {
-            const body = document.body;
+document.addEventListener('DOMContentLoaded', function() {
+            // Text elements to be typed
+            const elements = [
+                { id: 'h1-1', text: 'Hello😀', speed: 100 },
+                { id: 'h1-2', text: 'meeting after a time', speed: 50 },
+                { id: 'h1-3', text: 'please use laptop', speed: 50 },
+                { id: 'h1-4', text: 'please', speed: 50 },
+                { id: 'h1-5', html: 'good now <a href="#">click on me ;-)</a>', speed: 30 }
+            ];
             
-            // Create the main div
-            const div = document.createElement('div');
-            div.style.textAlign = 'center';
-            div.style.width = '100%';
-            div.style.height = '100%';
-            div.style.top = '0px';
-            div.style.left = '0px';
+            // Function to type out text
+            function typeWriter(element, text, speed, index = 0) {
+                if (index < text.length) {
+                    element.innerHTML = text.substring(0, index + 1) + '<span class="cursor-blink">|</span>';
+                    setTimeout(() => typeWriter(element, text, speed, index + 1), speed);
+                } else {
+                    element.innerHTML = text;
+                    element.style.borderRight = 'none';
+                }
+            }
             
-            // Create and append the h1 elements
-            const h1_1 = document.createElement('h1');
-            h1_1.style.fontSize = '100px';
-            h1_1.textContent = 'Hello😀';
-            div.appendChild(h1_1);
-            
-            const h1_2 = document.createElement('h1');
-            h1_2.textContent = 'meeting after a time';
-            div.appendChild(h1_2);
-            
-            const h1_3 = document.createElement('h1');
-            h1_3.textContent = 'please use laptop';
-            div.appendChild(h1_3);
-            
-            const h1_4 = document.createElement('h1');
-            h1_4.textContent = 'please';
-            div.appendChild(h1_4);
-            
-            const h1_5 = document.createElement('h1');
-            h1_5.innerHTML = 'good now <a href="untitled.html" style="color: #000;">click on me ;-) </a>';
-            div.appendChild(h1_5);
-            
-            // Append the div to the body
-            body.appendChild(div);
+            // Process each element with delay
+            elements.forEach((item, i) => {
+                setTimeout(() => {
+                    const element = document.createElement('h1');
+                    element.id = item.id;
+                    document.body.appendChild(element);
+                    
+                    if (item.html) {
+                        // For HTML content, we'll fade it in instead of typing
+                        element.innerHTML = item.html;
+                        element.style.opacity = 0;
+                        element.style.transition = 'opacity 0.5s ease-in';
+                        setTimeout(() => element.style.opacity = 1, 100);
+                    } else {
+                        element.classList.add('cursor-blink');
+                        typeWriter(element, item.text, item.speed);
+                    }
+                }, i * 2000); // Start each element 2 seconds after the previous one
+            });
         });
-
-
-        
