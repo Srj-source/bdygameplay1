@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,310 +5,431 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Happy Birthday!!! :)</title>
+  <title>Happy Birthday Arsha!!! :)</title>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="favicon.png" />
   <style>
-html {
-  box-sizing: border-box;
-}
+    html {
+      box-sizing: border-box;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
 
-body {
-  margin: 0;
-  font-family: "Work Sans", sans-serif;
-}
+    body {
+      margin: 0;
+      font-family: "Work Sans", sans-serif;
+      overflow-x: hidden;
+    }
 
-.container {
-  height: 100vh;
-  width: 100vh;
-  margin: 0 auto;
-  text-align: center;
-  visibility: hidden;
-  position: relative;
-  overflow: hidden;
-}
+    .container {
+      height: 100vh;
+      width: 100vw;
+      margin: 0 auto;
+      text-align: center;
+      visibility: hidden;
+      position: relative;
+      overflow: hidden;
+    }
 
-.container div.six {
-  top: 10vh;
-  z-index: 1;
-}
+    .container div.six {
+      top: 10vh;
+      z-index: 1;
+    }
 
-.container div.seven,
-.container div.eight {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-}
+    .container div.seven,
+    .container div.eight {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+    }
 
-.container > div {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 20vh;
-}
+    .container>div {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 20vh;
+    }
 
-.one {
-  font-size: 4.5rem;
-}
+    .one {
+      font-size: 4.5rem;
+    }
 
-.one > img {
-  vertical-align: middle;
-  margin-bottom: 10px;
-  max-width: 100%;
-  height: auto;
-}
+    .one>img {
+      vertical-align: middle;
+      margin-bottom: 10px;
+      max-width: 100%;
+      height: auto;
+    }
 
-.two {
-  font-size: 1.2rem;
-  font-weight: lighter;
-}
+    .two {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      color: #666;
+    }
 
-.three {
-  font-size: 3rem;
-}
+    .three {
+      font-size: 3.5rem;
+      font-family: 'Dancing Script', cursive;
+      color: #ff6b6b;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-.four .text-box {
-  width: 600px;
-  margin: 0 auto;
-  border: 3px solid #aaa;
-  border-radius: 5px;
-  padding: 10px;
-  position: relative;
-}
+    .four .text-box {
+      width: 600px;
+      margin: 0 auto;
+      border: 3px solid #aaa;
+      border-radius: 15px;
+      padding: 20px;
+      position: relative;
+      background: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
 
-.text-box p {
-  margin: 0;
-  text-align: left;
-}
+    .text-box p {
+      margin: 0;
+      text-align: left;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
 
-.text-box span {
-  visibility: hidden;
-}
+    .text-box span {
+      visibility: hidden;
+    }
 
-.text-box .fake-btn {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  color: #fff;
-  background-color: rgb(21, 161, 237);
-  padding: 5px 8px;
-  border-radius: 3px;
-}
+    .text-box .fake-btn {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      color: #fff;
+      background-color: #ff6b6b;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
 
-.five p {
-  font-size: 2rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
+    .text-box .fake-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
 
-.idea-3 strong {
-  padding: 3px 5px;
-  border-radius: 3px;
-  display: inline-block;
-}
+    .five p {
+      font-size: 2rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
 
-.five .idea-5 {
-  font-size: 4rem;
-}
+    .idea-3 strong {
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-.idea-5 span,
-.idea-6 span,
-.wish-hbd span {
-  display: inline-block;
-}
+    .five .idea-5 {
+      font-size: 4rem;
+    }
 
-.idea-6 span {
-  font-size: 15rem;
-}
+    .idea-5 span,
+    .idea-6 span,
+    .wish-hbd span {
+      display: inline-block;
+    }
 
-.six {
-  position: relative;
-}
+    .idea-6 span {
+      font-size: 15rem;
+      background: linear-gradient(45deg, #ff6b6b, #ffb8b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-.six img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
+    .six {
+      position: relative;
+    }
 
-.six .hat {
-  position: absolute;
-  width: 80px;
-  top: -35px;
-  left: 41.5%;
-  /* transform: scale(0.1); */
-}
+    .six img {
+      display: inline-block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      border: 5px solid white;
+    }
 
-.baloons img {
-  display: inline-block;
-  position: absolute;
-}
+    .six .hat {
+      position: absolute;
+      width: 100px;
+      top: -50px;
+      left: 41.5%;
+      transform-origin: bottom center;
+      animation: hatWobble 2s infinite alternate;
+    }
 
-.baloons img:nth-child(even) {
-  left: -10%;
-}
+    @keyframes hatWobble {
+      from {
+        transform: rotate(-5deg);
+      }
 
-.baloons img:nth-child(odd) {
-  right: -10%;
-}
+      to {
+        transform: rotate(5deg);
+      }
+    }
 
-.baloons img:nth-child(3n + 0) {
-  left: 30%;
-}
+    .baloons img {
+      display: inline-block;
+      position: absolute;
+      filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.1));
+      transition: all 0.5s ease;
+    }
 
-.eight svg {
-  width: 25px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  z-index: -1;
-}
+    .baloons img:hover {
+      transform: scale(1.1);
+    }
 
-.eight svg:nth-child(1) {
-  top: 7vh;
-  left: 5vw;
-  fill: #bd6ecf;
-}
+    .baloons img:nth-child(even) {
+      left: -10%;
+    }
 
-.eight svg:nth-child(2) {
-  top: 23vh;
-  left: 35vw;
-  fill: #7dd175;
-}
+    .baloons img:nth-child(odd) {
+      right: -10%;
+    }
 
-.eight svg:nth-child(3) {
-  top: 33vh;
-  left: 23vw;
-  fill: #349d8b;
-}
+    .baloons img:nth-child(3n + 0) {
+      left: 30%;
+    }
 
-.eight svg:nth-child(4) {
-  top: 43vh;
-  left: 57vw;
-  fill: #347a9d;
-}
+    .eight svg {
+      width: 25px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      z-index: -1;
+      filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+    }
 
-.eight svg:nth-child(5) {
-  top: 68vh;
-  left: 7vw;
-  fill: #c66053;
-}
+    .eight svg:nth-child(1) {
+      top: 7vh;
+      left: 5vw;
+      fill: #bd6ecf;
+    }
 
-.eight svg:nth-child(6) {
-  top: 42vh;
-  left: 77vw;
-  fill: #bfaa40;
-}
+    .eight svg:nth-child(2) {
+      top: 23vh;
+      left: 35vw;
+      fill: #7dd175;
+    }
 
-.eight svg:nth-child(7) {
-  top: 68vh;
-  left: 83vw;
-  fill: #e3bae8;
-}
+    .eight svg:nth-child(3) {
+      top: 33vh;
+      left: 23vw;
+      fill: #349d8b;
+    }
 
-.eight svg:nth-child(8) {
-  top: 86vh;
-  left: 37vw;
-  fill: #8762cb;
-}
+    .eight svg:nth-child(4) {
+      top: 43vh;
+      left: 57vw;
+      fill: #347a9d;
+    }
 
-.eight svg:nth-child(9) {
-  top: 94vh;
-  left: 87vw;
-  fill: #9a90da;
-}
+    .eight svg:nth-child(5) {
+      top: 68vh;
+      left: 7vw;
+      fill: #c66053;
+    }
 
-.wish-hbd {
-  font-size: 3em;
-  margin: 0;
-  text-transform: uppercase;
-}
+    .eight svg:nth-child(6) {
+      top: 42vh;
+      left: 77vw;
+      fill: #bfaa40;
+    }
 
-.wish h5 {
-  font-weight: lighter;
-  font-size: 2rem;
-  margin: 10px 0 0;
-}
+    .eight svg:nth-child(7) {
+      top: 68vh;
+      left: 83vw;
+      fill: #e3bae8;
+    }
 
-.nine p {
-  font-size: 2rem;
-  font-weight: lighter;
-}
+    .eight svg:nth-child(8) {
+      top: 86vh;
+      left: 37vw;
+      fill: #8762cb;
+    }
 
-#replay {
-  z-index: 3;
-  cursor: pointer;
-}
+    .eight svg:nth-child(9) {
+      top: 94vh;
+      left: 87vw;
+      fill: #9a90da;
+    }
 
-/* Media Queries */
-@media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
-}
+    .wish-hbd {
+      font-size: 4em;
+      margin: 0;
+      text-transform: uppercase;
+      font-family: 'Dancing Script', cursive;
+      color: #ff6b6b;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      letter-spacing: 2px;
+    }
 
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
-}
+    .wish h5 {
+      font-weight: lighter;
+      font-size: 2rem;
+      margin: 10px 0 0;
+      color: #666;
+    }
 
-@media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
-}
+    .nine p {
+      font-size: 2rem;
+      font-weight: lighter;
+    }
 
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
-}
+    #replay {
+      z-index: 3;
+      cursor: pointer;
+      background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
 
-@media screen and (max-width: 500px) {
-  .container {
-    width: 90%;
-  }
+    #replay:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
 
-  .four .text-box {
-    width: 90%;
-  }
+    .game-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: linear-gradient(45deg, #6b6bff, #8e8eff);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
 
-  .text-box .fake-btn {
-    right: 5px;
-    bottom: -38px;
-  }
+    .game-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(45deg, #8e8eff, #6b6bff);
+    }
 
-  .idea-5 span {
-    display: block;
-  }
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background-color: #f00;
+      opacity: 0;
+      z-index: 9999;
+      animation: confettiFall 5s linear forwards;
+    }
 
-  .idea-6 span {
-    font-size: 10rem;
-  }
+    @keyframes confettiFall {
+      0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
 
-  .six .hat {
-    width: 50px;
-    top: -20px;
-  }
+    .heart {
+      position: absolute;
+      pointer-events: none;
+      animation: float 4s ease-in-out infinite;
+    }
 
-  .wish-hbd {
-    font-size: 2.2em;
-  }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(10deg);
+      }
+    }
 
-  .wish h5 {
-    font-size: 1.4rem;
-  }
+    /* Media Queries */
+    @media screen and (max-height: 1000px) {
+      .six .hat {
+        left: 40%;
+      }
+    }
 
-  .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-  }
-}
-</style>
+    @media screen and (max-height: 800px) {
+      .six .hat {
+        left: 37%;
+      }
+    }
+
+    @media screen and (max-height: 700px) {
+      .six .hat {
+        left: 32%;
+      }
+    }
+
+    @media screen and (max-height: 850px) and (max-width: 450px) {
+      .six .hat {
+        left: 32%;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .container {
+        width: 90%;
+      }
+
+      .four .text-box {
+        width: 90%;
+        padding: 15px;
+      }
+
+      .text-box .fake-btn {
+        right: 15px;
+        bottom: -38px;
+      }
+
+      .idea-5 span {
+        display: block;
+      }
+
+      .idea-6 span {
+        font-size: 10rem;
+      }
+
+      .six .hat {
+        width: 70px;
+        top: -30px;
+      }
+
+      .wish-hbd {
+        font-size: 2.5em;
+      }
+
+      .wish h5 {
+        font-size: 1.4rem;
+      }
+
+      .nine p {
+        font-size: 1.5rem;
+        font-weight: lighter;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -318,41 +437,46 @@ body {
     <div class="one">
       <h1 class="one">
         <span data-node-name="greeting">Hey</span>
-        <span data-node-name="name">Miss arshas,princess</span>
+        <span data-node-name="name" style="color: #ff6b6b;">Arsha, my princess</span>
       </h1>
-      <p class="two" data-node-name="greetingText">I really like your name btw!</p>
+      <p class="two" data-node-name="greetingText">I really adore your name, just like I adore you!</p>
     </div>
     <div class="three">
-      <p data-node-name="text1">It's your birthday!!! :D</p>
+      <p data-node-name="text1">It's your special day!!! ✨</p>
     </div>
     <div class="four">
       <div class="text-box">
-        <p class="hbd-chatbox" data-node-name="textInChatBox">Happy birthday to you!! Yeee! Many many happy blah...</p>
-        <p class="fake-btn" data-node-name="sendButtonLabel">Send</p>
+        <p class="hbd-chatbox" data-node-name="textInChatBox">Happy birthday to the most amazing person I know! May your day be filled with joy, laughter, and all the happiness you deserve. You're incredible and I'm so lucky to know you!</p>
+        <p class="fake-btn" data-node-name="sendButtonLabel">Send Love</p>
       </div>
     </div>
     <div class="five">
-      <p class="idea-1" data-node-name="text2">That's what I was going to do.</p>
-      <p class="idea-2" data-node-name="text3">But then I stopped.</p>
+      <p class="idea-1" data-node-name="text2">That's what I was going to say.</p>
+      <p class="idea-2" data-node-name="text3">But then I thought...</p>
       <p class="idea-3">
-        <span data-node-name="text4">I realised, I wanted to do something</span>
-        <strong data-node-name="text4Adjective">special</strong>.</p>
-      <p class="idea-4" data-node-name="text5Entry">Because,</p>
+        <span data-node-name="text4">You deserve something more</span>
+        <strong data-node-name="text4Adjective">extraordinary</strong>.</p>
+      <p class="idea-4" data-node-name="text5Entry">Because...</p>
       <p class="idea-5">
-        <span data-node-name="text5Content">You are Special</span>
-        <span class="smiley" data-node-name="smiley">:)</span>
+        <span data-node-name="text5Content">You're Absolutely Amazing</span>
+        <span class="smiley" data-node-name="smiley">❤️</span>
       </p>
       <p class="idea-6">
         <span data-node-name="bigTextPart1">S</span>
-        <span data-node-name="bigTextPart2">O</span>
+        <span data-node-name="bigTextPart2">P</span>
+        <span data-node-name="bigTextPart3">E</span>
+        <span data-node-name="bigTextPart4">C</span>
+        <span data-node-name="bigTextPart5">I</span>
+        <span data-node-name="bigTextPart6">A</span>
+        <span data-node-name="bigTextPart7">L</span>
       </p>
     </div>
     <div class="six">
-      <img src="lydia2.png" alt="" class="lydia-dp" data-node-name="imagePath">
+      <img src="https://i.imgur.com/3VQdo9y.jpg" alt="Beautiful Arsha" class="lydia-dp" data-node-name="imagePath">
       <img src="hat.svg" alt="" class="hat">
       <div class="wish">
-        <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday!</h3>
-        <h5 data-node-name="wishText">May the js.prototypes always be with you! ;)</h5>
+        <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday Arsha!</h3>
+        <h5 data-node-name="wishText">May all your dreams come true and your year be filled with happiness!</h5>
       </div>
     </div>
     <div class="seven">
@@ -422,322 +546,362 @@ body {
       </svg>
     </div>
     <div class="nine">
-      <p data-node-name="outroText">Okay, now come back and tell me if you liked it.</p>
-      <p id="replay" data-node-name="replayText"></p>
-	<a href="https://srj-source.github.io/gameplay2/"><p style="color:black">lets come with me ,click on me</p>
-      <p class="last-smile" data-node-name="outroSmiley">:)</p>
+      <p data-node-name="outroText">I hope this little surprise made you smile! You deserve the world.</p>
+      <button id="replay" data-node-name="replayText">Replay the Magic</button>
+      <a href="https://srj-source.github.io/gameplay2/" class="game-link">Let's play a game together! Click me!</a>
+      <p class="last-smile" data-node-name="outroSmiley">❤️</p>
     </div>
   </div>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script type="application/javascript" >
-// Import the data to customize and insert them into page
-const fetchData = () => {
-  fetch("customize.json")
-    .then(data => data.json())
-    .then(data => {
-      dataArr = Object.keys(data);
-      dataArr.map(customData => {
-        if (data[customData] !== "") {
-          if (customData === "imagePath") {
-            document
-              .querySelector(`[data-node-name*="${customData}"]`)
-              .setAttribute("src", data[customData]);
-          } else {
-            document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
+<script type="application/javascript">
+  // Create floating hearts
+  function createHearts() {
+    const colors = ['#ff6b6b', '#ff8e8e', '#ffb8b8', '#ffd3d3', '#ff6b6b'];
+    const container = document.querySelector('.container');
+    
+    for (let i = 0; i < 15; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.top = Math.random() * 100 + 'vh';
+      heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+      heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      heart.style.animationDelay = Math.random() * 2 + 's';
+      container.appendChild(heart);
+    }
+  }
+
+  // Create confetti effect
+  function createConfetti() {
+    const colors = ['#ff6b6b', '#ff8e8e', '#ffb8b8', '#ffd3d3', '#6b6bff', '#8e8eff'];
+    
+    for (let i = 0; i < 100; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = Math.random() * 100 + 'vw';
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.width = (Math.random() * 10 + 5) + 'px';
+      confetti.style.height = (Math.random() * 10 + 5) + 'px';
+      confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      confetti.style.animationDelay = Math.random() * 2 + 's';
+      document.body.appendChild(confetti);
+      
+      // Remove confetti after animation
+      setTimeout(() => {
+        confetti.remove();
+      }, 5000);
+    }
+  }
+
+  // Import the data to customize and insert them into page
+  const fetchData = () => {
+    fetch("customize.json")
+      .then(data => data.json())
+      .then(data => {
+        dataArr = Object.keys(data);
+        dataArr.map(customData => {
+          if (data[customData] !== "") {
+            if (customData === "imagePath") {
+              document
+                .querySelector(`[data-node-name*="${customData}"]`)
+                .setAttribute("src", data[customData]);
+            } else {
+              document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
+            }
           }
-        }
 
-        // Check if the iteration is over
-        // Run amimation if so
-        if ( dataArr.length === dataArr.indexOf(customData) + 1 ) {
-          animationTimeline();
-        } 
+          // Check if the iteration is over
+          // Run amimation if so
+          if (dataArr.length === dataArr.indexOf(customData) + 1) {
+            animationTimeline();
+          }
+        });
       });
-    });
-};
-
-// Animation Timeline
-const animationTimeline = () => {
-  // Spit chars that needs to be animated individually
-  const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
-  const hbd = document.getElementsByClassName("wish-hbd")[0];
-
-  textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-    .split("")
-    .join("</span><span>")}</span`;
-
-  hbd.innerHTML = `<span>${hbd.innerHTML
-    .split("")
-    .join("</span><span>")}</span`;
-
-  const ideaTextTrans = {
-    opacity: 0,
-    y: -20,
-    rotationX: 5,
-    skewX: "15deg"
   };
 
-  const ideaTextTransLeave = {
-    opacity: 0,
-    y: 20,
-    rotationY: 5,
-    skewX: "-15deg"
-  };
+  // Animation Timeline
+  const animationTimeline = () => {
+    // Spit chars that needs to be animated individually
+    const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
+    const hbd = document.getElementsByClassName("wish-hbd")[0];
 
-  const tl = new TimelineMax();
+    textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
+      .split("")
+      .join("</span><span>")}</span`;
 
-  tl
-    .to(".container", 0.1, {
-      visibility: "visible"
-    })
-    .from(".one", 0.7, {
+    hbd.innerHTML = `<span>${hbd.innerHTML
+      .split("")
+      .join("</span><span>")}</span`;
+
+    const ideaTextTrans = {
       opacity: 0,
-      y: 10
-    })
-    .from(".two", 0.4, {
+      y: -20,
+      rotationX: 5,
+      skewX: "15deg"
+    };
+
+    const ideaTextTransLeave = {
       opacity: 0,
-      y: 10
-    })
-    .to(
-      ".one",
-      0.7,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "+=2.5"
-    )
-    .to(
-      ".two",
-      0.7,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "-=1"
-    )
-    .from(".three", 0.7, {
-      opacity: 0,
-      y: 10
-      // scale: 0.7
-    })
-    .to(
-      ".three",
-      0.7,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "+=2"
-    )
-    .from(".four", 0.7, {
-      scale: 0.2,
-      opacity: 0
-    })
-    .from(".fake-btn", 0.3, {
-      scale: 0.2,
-      opacity: 0
-    })
-    .staggerTo(
-      ".hbd-chatbox span",
-      0.5,
-      {
+      y: 20,
+      rotationY: 5,
+      skewX: "-15deg"
+    };
+
+    const tl = new TimelineMax();
+
+    tl
+      .to(".container", 0.1, {
         visibility: "visible"
-      },
-      0.05
-    )
-    .to(".fake-btn", 0.1, {
-      backgroundColor: "rgb(127, 206, 248)"
-    })
-    .to(
-      ".four",
-      0.5,
-      {
-        scale: 0.2,
+      })
+      .from(".one", 0.7, {
         opacity: 0,
-        y: -150
-      },
-      "+=0.7"
-    )
-    .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-3", 0.7, ideaTextTrans)
-    .to(".idea-3 strong", 0.5, {
-      scale: 1.2,
-      x: 10,
-      backgroundColor: "rgb(21, 161, 237)",
-      color: "#fff"
-    })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(
-      ".idea-5",
-      0.7,
-      {
-        rotationX: 15,
-        rotationZ: -10,
-        skewY: "-5deg",
-        y: 50,
-        z: 10,
-        opacity: 0
-      },
-      "+=0.5"
-    )
-    .to(
-      ".idea-5 .smiley",
-      0.7,
-      {
-        rotation: 90,
-        x: 8
-      },
-      "+=0.4"
-    )
-    .to(
-      ".idea-5",
-      0.7,
-      {
+        y: 10
+      })
+      .from(".two", 0.4, {
+        opacity: 0,
+        y: 10
+      })
+      .to(
+        ".one",
+        0.7,
+        {
+          opacity: 0,
+          y: 10
+        },
+        "+=2.5"
+      )
+      .to(
+        ".two",
+        0.7,
+        {
+          opacity: 0,
+          y: 10
+        },
+        "-=1"
+      )
+      .from(".three", 0.7, {
+        opacity: 0,
+        y: 10
+      })
+      .to(
+        ".three",
+        0.7,
+        {
+          opacity: 0,
+          y: 10
+        },
+        "+=2"
+      )
+      .from(".four", 0.7, {
         scale: 0.2,
         opacity: 0
-      },
-      "+=2"
-    )
-    .staggerFrom(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
+      })
+      .from(".fake-btn", 0.3, {
+        scale: 0.2,
+        opacity: 0
+      })
+      .staggerTo(
+        ".hbd-chatbox span",
+        0.5,
+        {
+          visibility: "visible"
+        },
+        0.05
+      )
+      .to(".fake-btn", 0.1, {
+        backgroundColor: "#ff8e8e"
+      })
+      .to(
+        ".four",
+        0.5,
+        {
+          scale: 0.2,
+          opacity: 0,
+          y: -150
+        },
+        "+=0.7"
+      )
+      .from(".idea-1", 0.7, ideaTextTrans)
+      .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
+      .from(".idea-2", 0.7, ideaTextTrans)
+      .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
+      .from(".idea-3", 0.7, ideaTextTrans)
+      .to(".idea-3 strong", 0.5, {
+        scale: 1.2,
+        x: 10,
+        backgroundColor: "#ff6b6b",
+        color: "#fff"
+      })
+      .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
+      .from(".idea-4", 0.7, ideaTextTrans)
+      .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
+      .from(
+        ".idea-5",
+        0.7,
+        {
+          rotationX: 15,
+          rotationZ: -10,
+          skewY: "-5deg",
+          y: 50,
+          z: 10,
+          opacity: 0
+        },
+        "+=0.5"
+      )
+      .to(
+        ".idea-5 .smiley",
+        0.7,
+        {
+          rotation: 90,
+          x: 8
+        },
+        "+=0.4"
+      )
+      .to(
+        ".idea-5",
+        0.7,
+        {
+          scale: 0.2,
+          opacity: 0
+        },
+        "+=2"
+      )
+      .staggerFrom(
+        ".idea-6 span",
+        0.8,
+        {
+          scale: 3,
+          opacity: 0,
+          rotation: 15,
+          ease: Expo.easeOut
+        },
+        0.2
+      )
+      .staggerTo(
+        ".idea-6 span",
+        0.8,
+        {
+          scale: 3,
+          opacity: 0,
+          rotation: -15,
+          ease: Expo.easeOut
+        },
+        0.2,
+        "+=1"
+      )
+      .staggerFromTo(
+        ".baloons img",
+        2.5,
+        {
+          opacity: 0.9,
+          y: 1400
+        },
+        {
+          opacity: 1,
+          y: -1000
+        },
+        0.2
+      )
+      .from(
+        ".lydia-dp",
+        0.5,
+        {
+          scale: 3.5,
+          opacity: 0,
+          x: 25,
+          y: -25,
+          rotationZ: -45
+        },
+        "-=2"
+      )
+      .from(".hat", 0.5, {
+        x: -100,
+        y: 350,
+        rotation: -180,
+        opacity: 0
+      })
+      .staggerFrom(
+        ".wish-hbd span",
+        0.7,
+        {
+          opacity: 0,
+          y: -50,
+          rotation: 150,
+          skewX: "30deg",
+          ease: Elastic.easeOut.config(1, 0.5)
+        },
+        0.1
+      )
+      .staggerFromTo(
+        ".wish-hbd span",
+        0.7,
+        {
+          scale: 1.4,
+          rotationY: 150
+        },
+        {
+          scale: 1,
+          rotationY: 0,
+          color: "#ff6b6b",
+          ease: Expo.easeOut
+        },
+        0.1,
+        "party"
+      )
+      .from(
+        ".wish h5",
+        0.5,
+        {
+          opacity: 0,
+          y: 10,
+          skewX: "-15deg"
+        },
+        "party"
+      )
+      .staggerTo(
+        ".eight svg",
+        1.5,
+        {
+          visibility: "visible",
+          opacity: 0,
+          scale: 80,
+          repeat: 3,
+          repeatDelay: 1.4
+        },
+        0.3
+      )
+      .to(".six", 0.5, {
         opacity: 0,
-        rotation: 15,
-        ease: Expo.easeOut
-      },
-      0.2
-    )
-    .staggerTo(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: -15,
-        ease: Expo.easeOut
-      },
-      0.2,
-      "+=1"
-    )
-    .staggerFromTo(
-      ".baloons img",
-      2.5,
-      {
-        opacity: 0.9,
-        y: 1400
-      },
-      {
-        opacity: 1,
-        y: -1000
-      },
-      0.2
-    )
-    .from(
-      ".lydia-dp",
-      0.5,
-      {
-        scale: 3.5,
-        opacity: 0,
-        x: 25,
-        y: -25,
-        rotationZ: -45
-      },
-      "-=2"
-    )
-    .from(".hat", 0.5, {
-      x: -100,
-      y: 350,
-      rotation: -180,
-      opacity: 0
-    })
-    .staggerFrom(
-      ".wish-hbd span",
-      0.7,
-      {
-        opacity: 0,
-        y: -50,
-        // scale: 0.3,
-        rotation: 150,
-        skewX: "30deg",
-        ease: Elastic.easeOut.config(1, 0.5)
-      },
-      0.1
-    )
-    .staggerFromTo(
-      ".wish-hbd span",
-      0.7,
-      {
-        scale: 1.4,
-        rotationY: 150
-      },
-      {
-        scale: 1,
-        rotationY: 0,
-        color: "#ff69b4",
-        ease: Expo.easeOut
-      },
-      0.1,
-      "party"
-    )
-    .from(
-      ".wish h5",
-      0.5,
-      {
-        opacity: 0,
-        y: 10,
-        skewX: "-15deg"
-      },
-      "party"
-    )
-    .staggerTo(
-      ".eight svg",
-      1.5,
-      {
-        visibility: "visible",
-        opacity: 0,
-        scale: 80,
-        repeat: 3,
-        repeatDelay: 1.4
-      },
-      0.3
-    )
-    .to(".six", 0.5, {
-      opacity: 0,
-      y: 30,
-      zIndex: "-1"
-    })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
-    .to(
-      ".last-smile",
-      0.5,
-      {
-        rotation: 90
-      },
-      "+=1"
-    );
+        y: 30,
+        zIndex: "-1"
+      })
+      .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+      .to(
+        ".last-smile",
+        0.5,
+        {
+          rotation: 90
+        },
+        "+=1"
+      )
+      .call(createConfetti);
 
-  // tl.seek("currentStep");
-  // tl.timeScale(2);
+    // Restart Animation on click
+    const replyBtn = document.getElementById("replay");
+    replyBtn.addEventListener("click", () => {
+      tl.restart();
+      createConfetti();
+    });
+  };
 
-  // Restart Animation on click
-  const replyBtn = document.getElementById("replay");
-  replyBtn.addEventListener("click", () => {
-    tl.restart();
+  // Run fetch and animation in sequence
+  document.addEventListener('DOMContentLoaded', () => {
+    createHearts();
+    fetchData();
   });
-};
-
-// Run fetch and animation in sequence
-fetchData();
 </script>
 
 </html>
