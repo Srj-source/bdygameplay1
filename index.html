@@ -4,354 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Happy Birthday Arsha!!! :)</title>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+  <title>Happy Birthday My Princess!</title>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Montserrat:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <style>
-    html {
+    :root {
+      --primary: #ff6b6b;
+      --secondary: #ff8e8e;
+      --accent: #ff4757;
+      --light: #fff5f5;
+      --dark: #2f3542;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     }
 
     body {
-      margin: 0;
-      font-family: "Work Sans", sans-serif;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #ffeef1 100%);
       overflow-x: hidden;
+      min-height: 100vh;
+      perspective: 1000px;
     }
 
     .container {
-      height: 100vh;
-      width: 100vw;
+      max-width: 100vw;
+      min-height: 100vh;
       margin: 0 auto;
       text-align: center;
-      visibility: hidden;
       position: relative;
       overflow: hidden;
+      visibility: hidden;
+      transform-style: preserve-3d;
     }
 
-    .container div.six {
-      top: 10vh;
-      z-index: 1;
-    }
-
-    .container div.seven,
-    .container div.eight {
-      width: 100vw;
-      height: 100vh;
+    /* Floating Hearts Background */
+    .hearts-container {
       position: fixed;
       top: 0;
-    }
-
-    .container>div {
-      position: absolute;
       left: 0;
-      right: 0;
-      top: 20vh;
-    }
-
-    .one {
-      font-size: 4.5rem;
-    }
-
-    .one>img {
-      vertical-align: middle;
-      margin-bottom: 10px;
-      max-width: 100%;
-      height: auto;
-    }
-
-    .two {
-      font-size: 1.5rem;
-      font-weight: lighter;
-      color: #666;
-    }
-
-    .three {
-      font-size: 3.5rem;
-      font-family: 'Dancing Script', cursive;
-      color: #ff6b6b;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .four .text-box {
-      width: 600px;
-      margin: 0 auto;
-      border: 3px solid #aaa;
-      border-radius: 15px;
-      padding: 20px;
-      position: relative;
-      background: white;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .text-box p {
-      margin: 0;
-      text-align: left;
-      font-size: 1.2rem;
-      line-height: 1.5;
-    }
-
-    .text-box span {
-      visibility: hidden;
-    }
-
-    .text-box .fake-btn {
-      position: absolute;
-      right: 15px;
-      bottom: 15px;
-      color: #fff;
-      background-color: #ff6b6b;
-      padding: 8px 15px;
-      border-radius: 20px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-
-    .text-box .fake-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .five p {
-      font-size: 2rem;
-      position: absolute;
-      left: 0;
-      right: 0;
-    }
-
-    .idea-3 strong {
-      padding: 5px 10px;
-      border-radius: 5px;
-      display: inline-block;
-      background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
-      color: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .five .idea-5 {
-      font-size: 4rem;
-    }
-
-    .idea-5 span,
-    .idea-6 span,
-    .wish-hbd span {
-      display: inline-block;
-    }
-
-    .idea-6 span {
-      font-size: 15rem;
-      background: linear-gradient(45deg, #ff6b6b, #ffb8b8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .six {
-      position: relative;
-    }
-
-    .six img {
-      display: inline-block;
-      max-width: 100%;
-      height: auto;
-      border-radius: 50%;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-      border: 5px solid white;
-    }
-
-    .six .hat {
-      position: absolute;
-      width: 100px;
-      top: -50px;
-      left: 41.5%;
-      transform-origin: bottom center;
-      animation: hatWobble 2s infinite alternate;
-    }
-
-    @keyframes hatWobble {
-      from {
-        transform: rotate(-5deg);
-      }
-
-      to {
-        transform: rotate(5deg);
-      }
-    }
-
-    .baloons img {
-      display: inline-block;
-      position: absolute;
-      filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.1));
-      transition: all 0.5s ease;
-    }
-
-    .baloons img:hover {
-      transform: scale(1.1);
-    }
-
-    .baloons img:nth-child(even) {
-      left: -10%;
-    }
-
-    .baloons img:nth-child(odd) {
-      right: -10%;
-    }
-
-    .baloons img:nth-child(3n + 0) {
-      left: 30%;
-    }
-
-    .eight svg {
-      width: 25px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      visibility: hidden;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
       z-index: -1;
-      filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
-    }
-
-    .eight svg:nth-child(1) {
-      top: 7vh;
-      left: 5vw;
-      fill: #bd6ecf;
-    }
-
-    .eight svg:nth-child(2) {
-      top: 23vh;
-      left: 35vw;
-      fill: #7dd175;
-    }
-
-    .eight svg:nth-child(3) {
-      top: 33vh;
-      left: 23vw;
-      fill: #349d8b;
-    }
-
-    .eight svg:nth-child(4) {
-      top: 43vh;
-      left: 57vw;
-      fill: #347a9d;
-    }
-
-    .eight svg:nth-child(5) {
-      top: 68vh;
-      left: 7vw;
-      fill: #c66053;
-    }
-
-    .eight svg:nth-child(6) {
-      top: 42vh;
-      left: 77vw;
-      fill: #bfaa40;
-    }
-
-    .eight svg:nth-child(7) {
-      top: 68vh;
-      left: 83vw;
-      fill: #e3bae8;
-    }
-
-    .eight svg:nth-child(8) {
-      top: 86vh;
-      left: 37vw;
-      fill: #8762cb;
-    }
-
-    .eight svg:nth-child(9) {
-      top: 94vh;
-      left: 87vw;
-      fill: #9a90da;
-    }
-
-    .wish-hbd {
-      font-size: 4em;
-      margin: 0;
-      text-transform: uppercase;
-      font-family: 'Dancing Script', cursive;
-      color: #ff6b6b;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-      letter-spacing: 2px;
-    }
-
-    .wish h5 {
-      font-weight: lighter;
-      font-size: 2rem;
-      margin: 10px 0 0;
-      color: #666;
-    }
-
-    .nine p {
-      font-size: 2rem;
-      font-weight: lighter;
-    }
-
-    #replay {
-      z-index: 3;
-      cursor: pointer;
-      background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 30px;
-      font-size: 1.2rem;
-      margin-top: 20px;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    #replay:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .game-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: linear-gradient(45deg, #6b6bff, #8e8eff);
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 1.2rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .game-link:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      background: linear-gradient(45deg, #8e8eff, #6b6bff);
-    }
-
-    .confetti {
-      position: fixed;
-      width: 10px;
-      height: 10px;
-      background-color: #f00;
-      opacity: 0;
-      z-index: 9999;
-      animation: confettiFall 5s linear forwards;
-    }
-
-    @keyframes confettiFall {
-      0% {
-        transform: translateY(-100vh) rotate(0deg);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(100vh) rotate(360deg);
-        opacity: 0;
-      }
     }
 
     .heart {
       position: absolute;
-      pointer-events: none;
-      animation: float 4s ease-in-out infinite;
+      opacity: 0.6;
+      animation: float 8s ease-in-out infinite;
     }
 
     @keyframes float {
@@ -359,549 +63,649 @@
         transform: translateY(0) rotate(0deg);
       }
       50% {
-        transform: translateY(-20px) rotate(10deg);
+        transform: translateY(-50px) rotate(10deg);
       }
     }
 
-    /* Media Queries */
-    @media screen and (max-height: 1000px) {
-      .six .hat {
-        left: 40%;
+    /* Main Content Sections */
+    section {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      transition: all 1s ease;
+      transform-style: preserve-3d;
+    }
+
+    /* Greeting Section */
+    .greeting {
+      z-index: 10;
+    }
+
+    .greeting h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 5rem;
+      color: var(--accent);
+      margin-bottom: 20px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+      transform: translateZ(50px);
+    }
+
+    .greeting p {
+      font-size: 1.5rem;
+      color: var(--dark);
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .name {
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 8px;
+    }
+
+    /* Birthday Message Section */
+    .birthday-message {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 700px;
+      transform: translateZ(30px);
+      backdrop-filter: blur(5px);
+    }
+
+    .birthday-message p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .special {
+      font-weight: 600;
+      color: var(--accent);
+      position: relative;
+      display: inline-block;
+    }
+
+    .special::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    .special:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    /* Photo Section */
+    .photo-section {
+      position: relative;
+      padding-top: 100px;
+    }
+
+    .photo-frame {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 10px solid white;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transform: rotateY(20deg);
+      transition: all 0.5s ease;
+      position: relative;
+    }
+
+    .photo-frame:hover {
+      transform: rotateY(0deg) scale(1.05);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .photo-frame:hover img {
+      transform: scale(1.1);
+    }
+
+    .birthday-hat {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-15deg);
+      width: 150px;
+      z-index: 5;
+      animation: hatWobble 2s infinite alternate;
+      filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.2));
+    }
+
+    @keyframes hatWobble {
+      from {
+        transform: translateX(-50%) rotate(-15deg);
+      }
+      to {
+        transform: translateX(-50%) rotate(15deg);
       }
     }
 
-    @media screen and (max-height: 800px) {
-      .six .hat {
-        left: 37%;
+    /* Celebration Section */
+    .celebration {
+      position: relative;
+    }
+
+    .wish {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      transform: translateZ(50px);
+    }
+
+    .wish h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4rem;
+      color: var(--accent);
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #ff6b6b, #ff4757);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .wish p {
+      font-size: 1.3rem;
+      color: var(--dark);
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    /* Balloons */
+    .balloons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .balloon {
+      position: absolute;
+      width: 80px;
+      height: 100px;
+      border-radius: 50%;
+      opacity: 0.8;
+      filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+      animation: floatUp 15s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(-100px) rotate(360deg);
       }
     }
 
-    @media screen and (max-height: 700px) {
-      .six .hat {
-        left: 32%;
+    /* Buttons */
+    .btn {
+      background: linear-gradient(45deg, var(--primary), var(--accent));
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 30px;
+      box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, var(--accent), var(--primary));
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(255, 107, 107, 0.4);
+    }
+
+    .btn:hover::before {
+      opacity: 1;
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    /* Confetti */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background-color: var(--primary);
+      opacity: 0;
+      z-index: 9999;
+      animation: confettiFall 5s linear forwards;
+    }
+
+    @keyframes confettiFall {
+      0% {
+        transform: translateY(-100vh) rotate(0deg) scale(0.5);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg) scale(1);
+        opacity: 0;
       }
     }
 
-    @media screen and (max-height: 850px) and (max-width: 450px) {
-      .six .hat {
-        left: 32%;
-      }
+    /* 3D Card Effect */
+    .card-3d {
+      width: 300px;
+      height: 400px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease;
+      margin: 30px auto;
+      position: relative;
+      overflow: hidden;
     }
 
-    @media screen and (max-width: 500px) {
-      .container {
+    .card-3d::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, 
+        rgba(255, 107, 107, 0.1) 0%, 
+        rgba(255, 107, 107, 0.3) 50%, 
+        rgba(255, 107, 107, 0.1) 100%);
+      transform: rotate(45deg);
+      z-index: 0;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-3d h3 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .card-3d p {
+      font-size: 1.1rem;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .greeting h1 {
+        font-size: 3.5rem;
+      }
+      
+      .birthday-message, .wish {
+        padding: 20px;
         width: 90%;
       }
-
-      .four .text-box {
-        width: 90%;
-        padding: 15px;
+      
+      .photo-frame {
+        width: 250px;
+        height: 250px;
       }
-
-      .text-box .fake-btn {
-        right: 15px;
-        bottom: -38px;
+      
+      .birthday-hat {
+        width: 120px;
+        top: -40px;
       }
-
-      .idea-5 span {
-        display: block;
+      
+      .wish h2 {
+        font-size: 3rem;
       }
-
-      .idea-6 span {
-        font-size: 10rem;
+      
+      .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
       }
+    }
 
-      .six .hat {
-        width: 70px;
-        top: -30px;
+    /* Magic Sparkles */
+    .sparkle {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: white;
+      pointer-events: none;
+      opacity: 0;
+      animation: sparkle 1s ease-out forwards;
+    }
+
+    @keyframes sparkle {
+      0% {
+        transform: scale(0);
+        opacity: 0;
       }
-
-      .wish-hbd {
-        font-size: 2.5em;
+      50% {
+        transform: scale(1);
+        opacity: 1;
       }
-
-      .wish h5 {
-        font-size: 1.4rem;
-      }
-
-      .nine p {
-        font-size: 1.5rem;
-        font-weight: lighter;
+      100% {
+        transform: scale(0);
+        opacity: 0;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="one">
-      <h1 class="one">
-        <span data-node-name="greeting">Hey</span>
-        <span data-node-name="name" style="color: #ff6b6b;">Arsha, my princess</span>
-      </h1>
-      <p class="two" data-node-name="greetingText">I really adore your name, just like I adore you!</p>
-    </div>
-    <div class="three">
-      <p data-node-name="text1">It's your special day!!! ✨</p>
-    </div>
-    <div class="four">
-      <div class="text-box">
-        <p class="hbd-chatbox" data-node-name="textInChatBox">Happy birthday to the most amazing person I know! May your day be filled with joy, laughter, and all the happiness you deserve. You're incredible and I'm so lucky to know you!</p>
-        <p class="fake-btn" data-node-name="sendButtonLabel">Send Love</p>
+  <!-- Floating Hearts Background -->
+  <div class="hearts-container" id="hearts-container"></div>
+
+  <!-- Main Container -->
+  <div class="container" id="container">
+    <!-- Greeting Section -->
+    <section class="greeting animate__animated">
+      <h1>Hello <span class="name">My Beautiful Arsha</span> ❤️</h1>
+      <p>I have something very special for you on your special day...</p>
+      <button class="btn" id="start-btn">Let's Begin the Magic!</button>
+    </section>
+
+    <!-- Birthday Message Section -->
+    <section class="birthday-message animate__animated" style="display: none;">
+      <div class="card-3d">
+        <div class="card-content">
+          <h3>To My Princess</h3>
+          <p>From the moment I met you, I knew you were someone <span class="special">extraordinary</span>. Your smile lights up my world, and your heart makes it a better place.</p>
+        </div>
       </div>
-    </div>
-    <div class="five">
-      <p class="idea-1" data-node-name="text2">That's what I was going to say.</p>
-      <p class="idea-2" data-node-name="text3">But then I thought...</p>
-      <p class="idea-3">
-        <span data-node-name="text4">You deserve something more</span>
-        <strong data-node-name="text4Adjective">extraordinary</strong>.</p>
-      <p class="idea-4" data-node-name="text5Entry">Because...</p>
-      <p class="idea-5">
-        <span data-node-name="text5Content">You're Absolutely Amazing</span>
-        <span class="smiley" data-node-name="smiley">❤️</span>
-      </p>
-      <p class="idea-6">
-        <span data-node-name="bigTextPart1">S</span>
-        <span data-node-name="bigTextPart2">P</span>
-        <span data-node-name="bigTextPart3">E</span>
-        <span data-node-name="bigTextPart4">C</span>
-        <span data-node-name="bigTextPart5">I</span>
-        <span data-node-name="bigTextPart6">A</span>
-        <span data-node-name="bigTextPart7">L</span>
-      </p>
-    </div>
-    <div class="six">
-      <img src="https://i.imgur.com/3VQdo9y.jpg" alt="Beautiful Arsha" class="lydia-dp" data-node-name="imagePath">
-      <img src="hat.svg" alt="" class="hat">
+      <button class="btn" id="next-btn-1">Continue the Journey</button>
+    </section>
+
+    <!-- Photo Section -->
+    <section class="photo-section animate__animated" style="display: none;">
+      <img src="hat.svg" alt="Birthday Hat" class="birthday-hat">
+      <div class="photo-frame">
+        <img src="https://i.imgur.com/3VQdo9y.jpg" alt="Beautiful Arsha">
+      </div>
+      <p class="animate__animated" style="margin-top: 30px; font-size: 1.5rem;">The most beautiful birthday girl! 🎀</p>
+      <button class="btn" id="next-btn-2">Make a Wish!</button>
+    </section>
+
+    <!-- Celebration Section -->
+    <section class="celebration animate__animated" style="display: none;">
       <div class="wish">
-        <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday Arsha!</h3>
-        <h5 data-node-name="wishText">May all your dreams come true and your year be filled with happiness!</h5>
+        <h2>Happy Birthday Arsha!</h2>
+        <p>May this year bring you endless joy, love, and all the happiness you deserve. You're the most amazing person I know, and I'm so grateful to have you in my life.</p>
       </div>
-    </div>
-    <div class="seven">
-      <div class="baloons">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon3.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon2.svg" alt="">
-        <img src="ballon1.svg" alt="">
-        <img src="ballon3.svg" alt="">
+      <button class="btn" id="celebrate-btn">Celebrate!</button>
+      <div class="balloons" id="balloons"></div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="final animate__animated" style="display: none;">
+      <div class="wish">
+        <h2>I Love You!</h2>
+        <p>Thank you for being you. This little surprise is just a small token of how much you mean to me. Wishing you the most wonderful birthday ever!</p>
+        <a href="https://srj-source.github.io/gameplay2/" class="btn">Let's Play a Game Together!</a>
+        <button class="btn" id="replay-btn" style="margin-top: 15px; background: var(--dark);">Relive the Magic</button>
       </div>
-    </div>
-    <div class="eight">
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-    </div>
-    <div class="nine">
-      <p data-node-name="outroText">I hope this little surprise made you smile! You deserve the world.</p>
-      <button id="replay" data-node-name="replayText">Replay the Magic</button>
-      <a href="https://srj-source.github.io/gameplay2/" class="game-link">Let's play a game together! Click me!</a>
-      <p class="last-smile" data-node-name="outroSmiley">❤️</p>
-    </div>
+    </section>
   </div>
-</body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script type="application/javascript">
-  // Create floating hearts
-  function createHearts() {
-    const colors = ['#ff6b6b', '#ff8e8e', '#ffb8b8', '#ffd3d3', '#ff6b6b'];
-    const container = document.querySelector('.container');
-    
-    for (let i = 0; i < 15; i++) {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.innerHTML = '❤️';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.top = Math.random() * 100 + 'vh';
-      heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
-      heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
-      heart.style.animationDelay = Math.random() * 2 + 's';
-      container.appendChild(heart);
-    }
-  }
-
-  // Create confetti effect
-  function createConfetti() {
-    const colors = ['#ff6b6b', '#ff8e8e', '#ffb8b8', '#ffd3d3', '#6b6bff', '#8e8eff'];
-    
-    for (let i = 0; i < 100; i++) {
-      const confetti = document.createElement('div');
-      confetti.classList.add('confetti');
-      confetti.style.left = Math.random() * 100 + 'vw';
-      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-      confetti.style.width = (Math.random() * 10 + 5) + 'px';
-      confetti.style.height = (Math.random() * 10 + 5) + 'px';
-      confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
-      confetti.style.animationDelay = Math.random() * 2 + 's';
-      document.body.appendChild(confetti);
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Create floating hearts
+      const heartsContainer = document.getElementById('hearts-container');
+      const heartColors = ['#ff6b6b', '#ff8e8e', '#ffb8b8', '#ffd3d3', '#ff6b6b'];
       
-      // Remove confetti after animation
-      setTimeout(() => {
-        confetti.remove();
-      }, 5000);
-    }
-  }
+      for (let i = 0; i < 20; i++) {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerHTML = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.top = Math.random() * 100 + 'vh';
+        heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        heart.style.animationDuration = (Math.random() * 6 + 4) + 's';
+        heart.style.animationDelay = Math.random() * 5 + 's';
+        heart.style.color = heartColors[Math.floor(Math.random() * heartColors.length)];
+        heartsContainer.appendChild(heart);
+      }
 
-  // Import the data to customize and insert them into page
-  const fetchData = () => {
-    fetch("customize.json")
-      .then(data => data.json())
-      .then(data => {
-        dataArr = Object.keys(data);
-        dataArr.map(customData => {
-          if (data[customData] !== "") {
-            if (customData === "imagePath") {
-              document
-                .querySelector(`[data-node-name*="${customData}"]`)
-                .setAttribute("src", data[customData]);
-            } else {
-              document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
-            }
-          }
+      // Create magic sparkles on click
+      document.addEventListener('click', function(e) {
+        for (let i = 0; i < 5; i++) {
+          const sparkle = document.createElement('div');
+          sparkle.classList.add('sparkle');
+          sparkle.style.left = e.pageX - 2.5 + 'px';
+          sparkle.style.top = e.pageY - 2.5 + 'px';
+          sparkle.style.animationDelay = i * 0.1 + 's';
+          document.body.appendChild(sparkle);
+          
+          setTimeout(() => {
+            sparkle.remove();
+          }, 1000);
+        }
+      });
 
-          // Check if the iteration is over
-          // Run amimation if so
-          if (dataArr.length === dataArr.indexOf(customData) + 1) {
-            animationTimeline();
+      // Balloon colors
+      const balloonColors = [
+        '#ff6b6b', '#ff8e8e', '#ffb8b8', 
+        '#6b6bff', '#8e8eff', '#b8b8ff',
+        '#6bff6b', '#8eff8e', '#b8ffb8',
+        '#ffff6b', '#ffff8e', '#ffffb8'
+      ];
+
+      // Create balloons
+      const balloonsContainer = document.getElementById('balloons');
+      for (let i = 0; i < 30; i++) {
+        const balloon = document.createElement('div');
+        balloon.classList.add('balloon');
+        balloon.style.left = Math.random() * 100 + 'vw';
+        balloon.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        balloon.style.animationDelay = Math.random() * 5 + 's';
+        balloon.style.backgroundColor = balloonColors[Math.floor(Math.random() * balloonColors.length)];
+        
+        // Add balloon tail
+        balloon.innerHTML = '<div style="position: absolute; bottom: -20px; left: 50%; width: 2px; height: 20px; background: rgba(0,0,0,0.2); transform: translateX(-50%);"></div>';
+        
+        balloonsContainer.appendChild(balloon);
+      }
+
+      // Confetti explosion
+      function createConfetti() {
+        for (let i = 0; i < 150; i++) {
+          const confetti = document.createElement('div');
+          confetti.classList.add('confetti');
+          confetti.style.left = Math.random() * 100 + 'vw';
+          confetti.style.backgroundColor = balloonColors[Math.floor(Math.random() * balloonColors.length)];
+          confetti.style.width = (Math.random() * 10 + 5) + 'px';
+          confetti.style.height = (Math.random() * 10 + 5) + 'px';
+          confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+          confetti.style.animationDelay = Math.random() * 0.5 + 's';
+          document.body.appendChild(confetti);
+          
+          setTimeout(() => {
+            confetti.remove();
+          }, 5000);
+        }
+      }
+
+      // Page navigation
+      const sections = document.querySelectorAll('section');
+      let currentSection = 0;
+      
+      // Show first section
+      sections[0].style.display = 'flex';
+      sections[0].classList.add('animate__fadeIn');
+      
+      // Start button
+      document.getElementById('start-btn').addEventListener('click', function() {
+        navigateTo(1);
+      });
+      
+      // Next buttons
+      document.getElementById('next-btn-1').addEventListener('click', function() {
+        navigateTo(2);
+      });
+      
+      document.getElementById('next-btn-2').addEventListener('click', function() {
+        navigateTo(3);
+      });
+      
+      // Celebrate button
+      document.getElementById('celebrate-btn').addEventListener('click', function() {
+        createConfetti();
+        
+        // Animate balloons
+        const balloons = document.querySelectorAll('.balloon');
+        balloons.forEach(balloon => {
+          balloon.style.animation = 'floatUp 5s linear forwards';
+        });
+        
+        setTimeout(() => {
+          navigateTo(4);
+        }, 2000);
+      });
+      
+      // Replay button
+      document.getElementById('replay-btn').addEventListener('click', function() {
+        // Reset all sections
+        sections.forEach((section, index) => {
+          section.style.display = 'none';
+          if (index === 0) {
+            section.style.display = 'flex';
+            section.classList.add('animate__fadeIn');
           }
         });
+        
+        currentSection = 0;
+        createConfetti();
       });
-  };
-
-  // Animation Timeline
-  const animationTimeline = () => {
-    // Spit chars that needs to be animated individually
-    const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
-    const hbd = document.getElementsByClassName("wish-hbd")[0];
-
-    textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-      .split("")
-      .join("</span><span>")}</span`;
-
-    hbd.innerHTML = `<span>${hbd.innerHTML
-      .split("")
-      .join("</span><span>")}</span`;
-
-    const ideaTextTrans = {
-      opacity: 0,
-      y: -20,
-      rotationX: 5,
-      skewX: "15deg"
-    };
-
-    const ideaTextTransLeave = {
-      opacity: 0,
-      y: 20,
-      rotationY: 5,
-      skewX: "-15deg"
-    };
-
-    const tl = new TimelineMax();
-
-    tl
-      .to(".container", 0.1, {
-        visibility: "visible"
-      })
-      .from(".one", 0.7, {
-        opacity: 0,
-        y: 10
-      })
-      .from(".two", 0.4, {
-        opacity: 0,
-        y: 10
-      })
-      .to(
-        ".one",
-        0.7,
-        {
-          opacity: 0,
-          y: 10
-        },
-        "+=2.5"
-      )
-      .to(
-        ".two",
-        0.7,
-        {
-          opacity: 0,
-          y: 10
-        },
-        "-=1"
-      )
-      .from(".three", 0.7, {
-        opacity: 0,
-        y: 10
-      })
-      .to(
-        ".three",
-        0.7,
-        {
-          opacity: 0,
-          y: 10
-        },
-        "+=2"
-      )
-      .from(".four", 0.7, {
-        scale: 0.2,
-        opacity: 0
-      })
-      .from(".fake-btn", 0.3, {
-        scale: 0.2,
-        opacity: 0
-      })
-      .staggerTo(
-        ".hbd-chatbox span",
-        0.5,
-        {
-          visibility: "visible"
-        },
-        0.05
-      )
-      .to(".fake-btn", 0.1, {
-        backgroundColor: "#ff8e8e"
-      })
-      .to(
-        ".four",
-        0.5,
-        {
-          scale: 0.2,
-          opacity: 0,
-          y: -150
-        },
-        "+=0.7"
-      )
-      .from(".idea-1", 0.7, ideaTextTrans)
-      .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(".idea-2", 0.7, ideaTextTrans)
-      .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(".idea-3", 0.7, ideaTextTrans)
-      .to(".idea-3 strong", 0.5, {
-        scale: 1.2,
-        x: 10,
-        backgroundColor: "#ff6b6b",
-        color: "#fff"
-      })
-      .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(".idea-4", 0.7, ideaTextTrans)
-      .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(
-        ".idea-5",
-        0.7,
-        {
-          rotationX: 15,
-          rotationZ: -10,
-          skewY: "-5deg",
-          y: 50,
-          z: 10,
-          opacity: 0
-        },
-        "+=0.5"
-      )
-      .to(
-        ".idea-5 .smiley",
-        0.7,
-        {
-          rotation: 90,
-          x: 8
-        },
-        "+=0.4"
-      )
-      .to(
-        ".idea-5",
-        0.7,
-        {
-          scale: 0.2,
-          opacity: 0
-        },
-        "+=2"
-      )
-      .staggerFrom(
-        ".idea-6 span",
-        0.8,
-        {
-          scale: 3,
-          opacity: 0,
-          rotation: 15,
-          ease: Expo.easeOut
-        },
-        0.2
-      )
-      .staggerTo(
-        ".idea-6 span",
-        0.8,
-        {
-          scale: 3,
-          opacity: 0,
-          rotation: -15,
-          ease: Expo.easeOut
-        },
-        0.2,
-        "+=1"
-      )
-      .staggerFromTo(
-        ".baloons img",
-        2.5,
-        {
-          opacity: 0.9,
-          y: 1400
-        },
-        {
-          opacity: 1,
-          y: -1000
-        },
-        0.2
-      )
-      .from(
-        ".lydia-dp",
-        0.5,
-        {
-          scale: 3.5,
-          opacity: 0,
-          x: 25,
-          y: -25,
-          rotationZ: -45
-        },
-        "-=2"
-      )
-      .from(".hat", 0.5, {
-        x: -100,
-        y: 350,
-        rotation: -180,
-        opacity: 0
-      })
-      .staggerFrom(
-        ".wish-hbd span",
-        0.7,
-        {
-          opacity: 0,
-          y: -50,
-          rotation: 150,
-          skewX: "30deg",
-          ease: Elastic.easeOut.config(1, 0.5)
-        },
-        0.1
-      )
-      .staggerFromTo(
-        ".wish-hbd span",
-        0.7,
-        {
-          scale: 1.4,
-          rotationY: 150
-        },
-        {
-          scale: 1,
-          rotationY: 0,
-          color: "#ff6b6b",
-          ease: Expo.easeOut
-        },
-        0.1,
-        "party"
-      )
-      .from(
-        ".wish h5",
-        0.5,
-        {
-          opacity: 0,
-          y: 10,
-          skewX: "-15deg"
-        },
-        "party"
-      )
-      .staggerTo(
-        ".eight svg",
-        1.5,
-        {
-          visibility: "visible",
-          opacity: 0,
-          scale: 80,
-          repeat: 3,
-          repeatDelay: 1.4
-        },
-        0.3
-      )
-      .to(".six", 0.5, {
-        opacity: 0,
-        y: 30,
-        zIndex: "-1"
-      })
-      .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
-      .to(
-        ".last-smile",
-        0.5,
-        {
-          rotation: 90
-        },
-        "+=1"
-      )
-      .call(createConfetti);
-
-    // Restart Animation on click
-    const replyBtn = document.getElementById("replay");
-    replyBtn.addEventListener("click", () => {
-      tl.restart();
-      createConfetti();
+      
+      // Navigation function
+      function navigateTo(sectionIndex) {
+        // Hide current section with animation
+        sections[currentSection].classList.remove('animate__fadeIn');
+        sections[currentSection].classList.add('animate__fadeOut');
+        
+        setTimeout(() => {
+          sections[currentSection].style.display = 'none';
+          sections[currentSection].classList.remove('animate__fadeOut');
+          
+          // Show new section with animation
+          sections[sectionIndex].style.display = 'flex';
+          sections[sectionIndex].classList.add('animate__fadeIn');
+          
+          currentSection = sectionIndex;
+          
+          // Special animations for certain sections
+          if (sectionIndex === 2) {
+            // Photo section - animate the hat and photo
+            const hat = document.querySelector('.birthday-hat');
+            const photo = document.querySelector('.photo-frame');
+            
+            gsap.from(hat, {
+              y: -100,
+              rotation: -180,
+              duration: 1,
+              ease: "elastic.out(1, 0.5)"
+            });
+            
+            gsap.from(photo, {
+              scale: 0.5,
+              rotationY: 180,
+              duration: 1,
+              ease: "back.out(1.7)"
+            });
+          }
+          
+          if (sectionIndex === 3) {
+            // Celebration section - animate the wish text
+            const wishText = document.querySelector('.wish h2');
+            gsap.from(wishText, {
+              y: -50,
+              scale: 1.5,
+              opacity: 0,
+              duration: 1,
+              ease: "elastic.out(1, 0.5)"
+            });
+          }
+        }, 500);
+      }
+      
+      // 3D tilt effect for card
+      const card = document.querySelector('.card-3d');
+      
+      if (card) {
+        card.addEventListener('mousemove', (e) => {
+          const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+          const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+          card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+        
+        card.addEventListener('mouseenter', () => {
+          card.style.transition = 'none';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.style.transition = 'all 0.5s ease';
+          card.style.transform = 'rotateY(0deg) rotateX(0deg)';
+        });
+      }
+      
+      // Make container visible after everything is loaded
+      setTimeout(() => {
+        document.getElementById('container').style.visibility = 'visible';
+      }, 100);
     });
-  };
-
-  // Run fetch and animation in sequence
-  document.addEventListener('DOMContentLoaded', () => {
-    createHearts();
-    fetchData();
-  });
-</script>
+  </script>
+</body>
 
 </html>
