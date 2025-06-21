@@ -156,7 +156,7 @@
       display: inline-block;
       max-width: 100%;
       height: auto;
-      
+     
     }
 
     .six .hat {
@@ -434,48 +434,48 @@
   <div class="container">
     <div class="one">
       <h1 class="one">
-        <span data-node-name="greeting">Hey</span>
-        <span data-node-name="name" style="color: #ff6b6b;">Arsha, my princess</span>
+        <span>Hey</span>
+        <span style="color: #ff6b6b;">Miss Arshad, my princess</span>
       </h1>
-      <p class="two" data-node-name="greetingText">I really adore your name, just like I adore you!</p>
+      <p class="two">I really adore your name, just like I adore you!</p>
     </div>
     <div class="three">
-      <p data-node-name="text1">It's your special day!!! ✨</p>
+      <p>It's your special day!!! ✨</p>
     </div>
     <div class="four">
       <div class="text-box">
-        <p class="hbd-chatbox" data-node-name="textInChatBox">Happy birthday to the most amazing person I know! May your day be filled with joy, laughter, and all the happiness you deserve. You're incredible and I'm so lucky to know you!</p>
-        <p class="fake-btn" data-node-name="sendButtonLabel">Send Love</p>
+        <p class="hbd-chatbox">Happy birthday to the most amazing person I know! May your day be filled with joy, laughter, and all the happiness you deserve. You're incredible and I'm so lucky to know you!</p>
+        <p class="fake-btn">Send Love</p>
       </div>
     </div>
     <div class="five">
-      <p class="idea-1" data-node-name="text2">That's what I was going to say.</p>
-      <p class="idea-2" data-node-name="text3">But then I thought...</p>
+      <p class="idea-1">That's what I was going to say.</p>
+      <p class="idea-2">But then I thought...</p>
       <p class="idea-3">
-        <span data-node-name="text4">You deserve something more</span>
-        <strong data-node-name="text4Adjective">extraordinary</strong>.</p>
-      <p class="idea-4" data-node-name="text5Entry">Because...</p>
+        <span>You deserve something more</span>
+        <strong>extraordinary</strong>.</p>
+      <p class="idea-4">Because...</p>
       <p class="idea-5">
-        <span data-node-name="text5Content">You're Absolutely Amazing</span>
-        <span class="smiley" data-node-name="smiley">❤️</span>
+        <span>You're Absolutely Amazing</span>
+        <span class="smiley">:)</span>
       </p>
       <p class="idea-6">
-        <span data-node-name="bigTextPart1">S</span>
-        <span data-node-name="bigTextPart2">O</span>
-        <span data-node-name="bigTextPart3"></span>
-        <span data-node-name="bigTextPart4"></span>
-        <span data-node-name="bigTextPart5"></span>
-        <span data-node-name="bigTextPart6"></span>
-        <span data-node-name="bigTextPart7"></span>
+        <span>S</span>
+        <span>P</span>
+        <span>E</span>
+        <span>C</span>
+        <span>I</span>
+        <span>A</span>
+        <span>L</span>
       </p>
     </div>
     <div class="six">
-      <img src="https://i.imgur.com/3VQdo9y.jpg" style="border-radius: 10%;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); border: 5px solid white;" alt="Beautiful Arshad" class="lydia-dp" data-node-name="imagePath">
+            <img src="IMG_20240813_213351 1.jpg" style="border-radius: 10%;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); border: 5px solid white;" alt="Beautiful Arshad" class="lydia-dp" >
       <img src="hat.svg" style="border-radius: 0%,border:0px;" class="hat">
-      <div class="wish">
-        <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday Arsha!</h3>
-        <h5 data-node-name="wishText">May all your dreams come true and your year be filled with happiness!</h5>
+<div class="wish">
+        <h3 class="wish-hbd">Happy Birthday SAIBA!</h3>
+        <h5>May all your dreams come true and your year be filled with happiness!</h5>
       </div>
     </div>
     <div class="seven">
@@ -545,363 +545,337 @@
       </svg>
     </div>
     <div class="nine">
-      <p data-node-name="outroText">I hope this little surprise made you smile! You deserve the world.</p>
-       <a href="https://srj-source.github.io/gameplay2/" ><p class="game-link"data-node-name="outroText">lets come with me ,play a game {click on me}</p></a>
+      
+       <p >I hope this little surprise made you smile! You deserve the world.</p>
+       <a href="https://srj-source.github.io/gameplay2/" ><p class="game-link">lets come with me ,play a game {click on me}</p></a>
 
-      <button id="replay" style="visibility: hidden;" data-node-name="replayText"></button>
-      <p class="last-smile" data-node-name="outroSmiley">❤️</p>
+      <button style="visibility: hidden;" id="replay">Replay the Magic</button>
+      
+      <p class="last-smile">:)</p>
     </div>
   </div>
-</body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script type="application/javascript">
-  // Create floating hearts
-  function createHearts() {
-    const colors = ['#ff6b6b', '#ff8e8e', '#ffb8b8', '#ffd3d3', '#ff6b6b'];
-    const container = document.querySelector('.container');
-    
-    for (let i = 0; i < 15; i++) {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.innerHTML = '❤️';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.top = Math.random() * 100 + 'vh';
-      heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
-      heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
-      heart.style.animationDelay = Math.random() * 2 + 's';
-      container.appendChild(heart);
-    }
-  }
-
-  // Create confetti effect
-  function createConfetti() {
-    const colors = ['#ff6b6b', '#ff8e8e', '#ffb8b8', '#ffd3d3', '#6b6bff', '#8e8eff'];
-    
-    for (let i = 0; i < 100; i++) {
-      const confetti = document.createElement('div');
-      confetti.classList.add('confetti');
-      confetti.style.left = Math.random() * 100 + 'vw';
-      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-      confetti.style.width = (Math.random() * 10 + 5) + 'px';
-      confetti.style.height = (Math.random() * 10 + 5) + 'px';
-      confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
-      confetti.style.animationDelay = Math.random() * 2 + 's';
-      document.body.appendChild(confetti);
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script type="application/javascript">
+    // Create floating hearts
+    function createHearts() {
+      const container = document.querySelector('.container');
       
-      // Remove confetti after animation
-      setTimeout(() => {
-        confetti.remove();
-      }, 5000);
+      for (let i = 0; i < 15; i++) {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerHTML = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.top = Math.random() * 100 + 'vh';
+        heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        heart.style.animationDelay = Math.random() * 2 + 's';
+        container.appendChild(heart);
+      }
     }
-  }
 
-  // Import the data to customize and insert them into page
-  const fetchData = () => {
-    fetch("customize.json")
-      .then(data => data.json())
-      .then(data => {
-        dataArr = Object.keys(data);
-        dataArr.map(customData => {
-          if (data[customData] !== "") {
-            if (customData === "imagePath") {
-              document
-                .querySelector(`[data-node-name*="${customData}"]`)
-                .setAttribute("src", data[customData]);
-            } else {
-              document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
-            }
-          }
+    // Create confetti effect
+    function createConfetti() {
+      const colors = ['#ff6b6b', '#ff8e8e', '#ffb8b8', '#ffd3d3', '#6b6bff', '#8e8eff'];
+      
+      for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.width = (Math.random() * 10 + 5) + 'px';
+        confetti.style.height = (Math.random() * 10 + 5) + 'px';
+        confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        confetti.style.animationDelay = Math.random() * 2 + 's';
+        document.body.appendChild(confetti);
+        
+        // Remove confetti after animation
+        setTimeout(() => {
+          confetti.remove();
+        }, 5000);
+      }
+    }
 
-          // Check if the iteration is over
-          // Run amimation if so
-          if (dataArr.length === dataArr.indexOf(customData) + 1) {
-            animationTimeline();
-          }
-        });
-      });
-  };
+    // Animation Timeline
+    const animationTimeline = () => {
+      // Spit chars that needs to be animated individually
+      const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
+      const hbd = document.getElementsByClassName("wish-hbd")[0];
 
-  // Animation Timeline
-  const animationTimeline = () => {
-    // Spit chars that needs to be animated individually
-    const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
-    const hbd = document.getElementsByClassName("wish-hbd")[0];
+      textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
+        .split("")
+        .join("</span><span>")}</span`;
 
-    textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-      .split("")
-      .join("</span><span>")}</span`;
+      hbd.innerHTML = `<span>${hbd.innerHTML
+        .split("")
+        .join("</span><span>")}</span`;
 
-    hbd.innerHTML = `<span>${hbd.innerHTML
-      .split("")
-      .join("</span><span>")}</span`;
-
-    const ideaTextTrans = {
-      opacity: 0,
-      y: -20,
-      rotationX: 5,
-      skewX: "15deg"
-    };
-
-    const ideaTextTransLeave = {
-      opacity: 0,
-      y: 20,
-      rotationY: 5,
-      skewX: "-15deg"
-    };
-
-    const tl = new TimelineMax();
-
-    tl
-      .to(".container", 0.1, {
-        visibility: "visible"
-      })
-      .from(".one", 0.7, {
+      const ideaTextTrans = {
         opacity: 0,
-        y: 10
-      })
-      .from(".two", 0.4, {
+        y: -20,
+        rotationX: 5,
+        skewX: "15deg"
+      };
+
+      const ideaTextTransLeave = {
         opacity: 0,
-        y: 10
-      })
-      .to(
-        ".one",
-        0.7,
-        {
-          opacity: 0,
-          y: 10
-        },
-        "+=2.5"
-      )
-      .to(
-        ".two",
-        0.7,
-        {
-          opacity: 0,
-          y: 10
-        },
-        "-=1"
-      )
-      .from(".three", 0.7, {
-        opacity: 0,
-        y: 10
-      })
-      .to(
-        ".three",
-        0.7,
-        {
-          opacity: 0,
-          y: 10
-        },
-        "+=2"
-      )
-      .from(".four", 0.7, {
-        scale: 0.2,
-        opacity: 0
-      })
-      .from(".fake-btn", 0.3, {
-        scale: 0.2,
-        opacity: 0
-      })
-      .staggerTo(
-        ".hbd-chatbox span",
-        0.5,
-        {
+        y: 20,
+        rotationY: 5,
+        skewX: "-15deg"
+      };
+
+      const tl = new TimelineMax();
+
+      tl
+        .to(".container", 0.1, {
           visibility: "visible"
-        },
-        0.05
-      )
-      .to(".fake-btn", 0.1, {
-        backgroundColor: "#ff8e8e"
-      })
-      .to(
-        ".four",
-        0.5,
-        {
-          scale: 0.2,
+        })
+        .from(".one", 0.7, {
           opacity: 0,
-          y: -150
-        },
-        "+=0.7"
-      )
-      .from(".idea-1", 0.7, ideaTextTrans)
-      .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(".idea-2", 0.7, ideaTextTrans)
-      .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(".idea-3", 0.7, ideaTextTrans)
-      .to(".idea-3 strong", 0.5, {
-        scale: 1.2,
-        x: 10,
-        backgroundColor: "#ff6b6b",
-        color: "#fff"
-      })
-      .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(".idea-4", 0.7, ideaTextTrans)
-      .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
-      .from(
-        ".idea-5",
-        0.7,
-        {
-          rotationX: 15,
-          rotationZ: -10,
-          skewY: "-5deg",
-          y: 50,
-          z: 10,
-          opacity: 0
-        },
-        "+=0.5"
-      )
-      .to(
-        ".idea-5 .smiley",
-        0.7,
-        {
-          rotation: 90,
-          x: 8
-        },
-        "+=0.4"
-      )
-      .to(
-        ".idea-5",
-        0.7,
-        {
+          y: 10
+        })
+        .from(".two", 0.4, {
+          opacity: 0,
+          y: 10
+        })
+        .to(
+          ".one",
+          0.7,
+          {
+            opacity: 0,
+            y: 10
+          },
+          "+=2.5"
+        )
+        .to(
+          ".two",
+          0.7,
+          {
+            opacity: 0,
+            y: 10
+          },
+          "-=1"
+        )
+        .from(".three", 0.7, {
+          opacity: 0,
+          y: 10
+        })
+        .to(
+          ".three",
+          0.7,
+          {
+            opacity: 0,
+            y: 10
+          },
+          "+=2"
+        )
+        .from(".four", 0.7, {
           scale: 0.2,
           opacity: 0
-        },
-        "+=2"
-      )
-      .staggerFrom(
-        ".idea-6 span",
-        0.8,
-        {
-          scale: 3,
+        })
+        .from(".fake-btn", 0.3, {
+          scale: 0.2,
+          opacity: 0
+        })
+        .staggerTo(
+          ".hbd-chatbox span",
+          0.5,
+          {
+            visibility: "visible"
+          },
+          0.05
+        )
+        .to(".fake-btn", 0.1, {
+          backgroundColor: "#ff8e8e"
+        })
+        .to(
+          ".four",
+          0.5,
+          {
+            scale: 0.2,
+            opacity: 0,
+            y: -150
+          },
+          "+=0.7"
+        )
+        .from(".idea-1", 0.7, ideaTextTrans)
+        .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
+        .from(".idea-2", 0.7, ideaTextTrans)
+        .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
+        .from(".idea-3", 0.7, ideaTextTrans)
+        .to(".idea-3 strong", 0.5, {
+          scale: 1.2,
+          x: 10,
+          backgroundColor: "#ff6b6b",
+          color: "#fff"
+        })
+        .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
+        .from(".idea-4", 0.7, ideaTextTrans)
+        .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
+        .from(
+          ".idea-5",
+          0.7,
+          {
+            rotationX: 15,
+            rotationZ: -10,
+            skewY: "-5deg",
+            y: 50,
+            z: 10,
+            opacity: 0
+          },
+          "+=0.5"
+        )
+        .to(
+          ".idea-5 .smiley",
+          0.7,
+          {
+            rotation: 90,
+            x: 8
+          },
+          "+=0.4"
+        )
+        .to(
+          ".idea-5",
+          0.7,
+          {
+            scale: 0.2,
+            opacity: 0
+          },
+          "+=2"
+        )
+        .staggerFrom(
+          ".idea-6 span",
+          0.8,
+          {
+            scale: 3,
+            opacity: 0,
+            rotation: 15,
+            ease: Expo.easeOut
+          },
+          0.2
+        )
+        .staggerTo(
+          ".idea-6 span",
+          0.8,
+          {
+            scale: 3,
+            opacity: 0,
+            rotation: -15,
+            ease: Expo.easeOut
+          },
+          0.2,
+          "+=1"
+        )
+        .staggerFromTo(
+          ".baloons img",
+          2.5,
+          {
+            opacity: 0.9,
+            y: 1400
+          },
+          {
+            opacity: 1,
+            y: -1000
+          },
+          0.2
+        )
+        .from(
+          ".lydia-dp",
+          0.5,
+          {
+            scale: 3.5,
+            opacity: 0,
+            x: 25,
+            y: -25,
+            rotationZ: -45
+          },
+          "-=2"
+        )
+        .from(".hat", 0.5, {
+          x: -100,
+          y: 350,
+          rotation: -180,
+          opacity: 0
+        })
+        .staggerFrom(
+          ".wish-hbd span",
+          0.7,
+          {
+            opacity: 0,
+            y: -50,
+            rotation: 150,
+            skewX: "30deg",
+            ease: Elastic.easeOut.config(1, 0.5)
+          },
+          0.1
+        )
+        .staggerFromTo(
+          ".wish-hbd span",
+          0.7,
+          {
+            scale: 1.4,
+            rotationY: 150
+          },
+          {
+            scale: 1,
+            rotationY: 0,
+            color: "#ff6b6b",
+            ease: Expo.easeOut
+          },
+          0.1,
+          "party"
+        )
+        .from(
+          ".wish h5",
+          0.5,
+          {
+            opacity: 0,
+            y: 10,
+            skewX: "-15deg"
+          },
+          "party"
+        )
+        .staggerTo(
+          ".eight svg",
+          1.5,
+          {
+            visibility: "visible",
+            opacity: 0,
+            scale: 80,
+            repeat: 3,
+            repeatDelay: 1.4
+          },
+          0.3
+        )
+        .to(".six", 0.5, {
           opacity: 0,
-          rotation: 15,
-          ease: Expo.easeOut
-        },
-        0.2
-      )
-      .staggerTo(
-        ".idea-6 span",
-        0.8,
-        {
-          scale: 3,
-          opacity: 0,
-          rotation: -15,
-          ease: Expo.easeOut
-        },
-        0.2,
-        "+=1"
-      )
-      .staggerFromTo(
-        ".baloons img",
-        2.5,
-        {
-          opacity: 0.9,
-          y: 1400
-        },
-        {
-          opacity: 1,
-          y: -1000
-        },
-        0.2
-      )
-      .from(
-        ".lydia-dp",
-        0.5,
-        {
-          scale: 3.5,
-          opacity: 0,
-          x: 25,
-          y: -25,
-          rotationZ: -45
-        },
-        "-=2"
-      )
-      .from(".hat", 0.5, {
-        x: -100,
-        y: 350,
-        rotation: -180,
-        opacity: 0
-      })
-      .staggerFrom(
-        ".wish-hbd span",
-        0.7,
-        {
-          opacity: 0,
-          y: -50,
-          rotation: 150,
-          skewX: "30deg",
-          ease: Elastic.easeOut.config(1, 0.5)
-        },
-        0.1
-      )
-      .staggerFromTo(
-        ".wish-hbd span",
-        0.7,
-        {
-          scale: 1.4,
-          rotationY: 150
-        },
-        {
-          scale: 1,
-          rotationY: 0,
-          color: "#ff6b6b",
-          ease: Expo.easeOut
-        },
-        0.1,
-        "party"
-      )
-      .from(
-        ".wish h5",
-        0.5,
-        {
-          opacity: 0,
-          y: 10,
-          skewX: "-15deg"
-        },
-        "party"
-      )
-      .staggerTo(
-        ".eight svg",
-        1.5,
-        {
-          visibility: "visible",
-          opacity: 0,
-          scale: 80,
-          repeat: 3,
-          repeatDelay: 1.4
-        },
-        0.3
-      )
-      .to(".six", 0.5, {
-        opacity: 0,
-        y: 30,
-        zIndex: "-1"
-      })
-      .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
-      .to(
-        ".last-smile",
-        0.5,
-        {
-          rotation: 90
-        },
-        "+=1"
-      )
-      .call(createConfetti);
+          y: 30,
+          zIndex: "-1"
+        })
+        .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+        .to(
+          ".last-smile",
+          0.5,
+          {
+            rotation: 90
+          },
+          "+=1"
+        )
+        .call(createConfetti);
 
-    // Restart Animation on click
-    const replyBtn = document.getElementById("replay");
-    replyBtn.addEventListener("click", () => {
-      tl.restart();
-      createConfetti();
+      // Restart Animation on click
+      const replyBtn = document.getElementById("replay");
+      replyBtn.addEventListener("click", () => {
+        tl.restart();
+        createConfetti();
+      });
+    };
+
+    // Initialize everything when page loads
+    document.addEventListener('DOMContentLoaded', () => {
+      createHearts();
+      animationTimeline();
     });
-  };
-
-  // Run fetch and animation in sequence
-  document.addEventListener('DOMContentLoaded', () => {
-    createHearts();
-    fetchData();
-  });
-</script>
-
+  </script>
+</body>
 </html>
